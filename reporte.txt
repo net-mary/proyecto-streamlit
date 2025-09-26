@@ -1,0 +1,42 @@
+REPORTE DE ANALISIS EMOCIONAL
+=============================
+
+Frames analizados: 18
+Frame 0 - Rostros: 1
+   Emoción: Happy (Confianza: 0.80)
+Frame 29 - Rostros: 1
+   Emoción: Neutral (Confianza: 0.49)
+Frame 58 - Rostros: 1
+   Emoción: Sad (Confianza: 0.42)
+Frame 87 - Rostros: 1
+   Emoción: Sad (Confianza: 0.46)
+Frame 116 - Rostros: 1
+   Emoción: Sad (Confianza: 0.37)
+Frame 145 - Rostros: 1
+   Emoción: Sad (Confianza: 0.36)
+Frame 174 - Rostros: 1
+   Emoción: Neutral (Confianza: 0.38)
+Frame 203 - Rostros: 1
+   Emoción: Sad (Confianza: 0.41)
+Frame 232 - Rostros: 0
+Frame 261 - Rostros: 1
+   Emoción: Angry (Confianza: 0.23)
+Frame 290 - Rostros: 1
+   Emoción: Angry (Confianza: 0.25)
+Frame 319 - Rostros: 1
+   Emoción: Neutral (Confianza: 0.39)
+Frame 348 - Rostros: 2
+   Emoción: Neutral (Confianza: 0.29)
+   Emoción: Sad (Confianza: 0.48)
+Frame 377 - Rostros: 1
+   Emoción: Sad (Confianza: 0.34)
+Frame 406 - Rostros: 0
+Frame 435 - Rostros: 0
+Frame 464 - Rostros: 1
+   Emoción: Happy (Confianza: 0.24)
+Frame 493 - Rostros: 0
+
+TRANSCRIPCION AUDIO Y PALABRAS
+Palabras detectadas: ['me', 'siento', 'mal', 'en', 'la', 'cabeza', 'me', 'siento', 'mal', 'la', 'cabeza', 'mamá', 'cómo', 'te', 'sentís', 'mal', 'de', 'la', 'cabeza', 'porque', 'no', 'quiero', 'ir', 'al', 'colegio', 'porque', 'me', 'hace', 'mal', 'Qué', 'te', 'hace', 'mal', 'el', 'trabajo', 'me', 'siento', 'mal', 'decirle', 'a', 'Marcela', 'que', 'no', 'voy']
+Intentos de palabra: 43
+Transcripción: me siento mal en la cabeza me siento mal la cabeza mamá cómo te sentís mal de la cabeza porque no quiero ir al colegio porque me hace mal Qué te hace mal el trabajo me siento mal decirle a Marcela que no voy

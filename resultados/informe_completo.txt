@@ -1,0 +1,39 @@
+Informe de Análisis de Comunicación
+======================
+
+Tipo de usuario: Madre/Padre
+Nombre del niño/a: Matias
+Edad: 7
+Sexo: Masculino
+Diagnóstico: TEA
+Contexto: quiere vacaciones
+Intervalo entre frames (ms): 1000
+Sensibilidad emocional: 1.0
+Emociones: {'Surprise': 2, 'Sad': 3, 'Happy': 3, 'Angry': 2}
+Análisis audio: {}
+
+Emociones detectadas:
+  - Surprise: 2
+  - Sad: 3
+  - Happy: 3
+  - Angry: 2
+
+Resultados por frame:
+ Frame 0: 0 rostro(s), emociones: 
+ Frame 30: 1 rostro(s), emociones: Surprise
+ Frame 60: 0 rostro(s), emociones: 
+ Frame 90: 1 rostro(s), emociones: Surprise
+ Frame 120: 1 rostro(s), emociones: Sad
+ Frame 150: 0 rostro(s), emociones: 
+ Frame 180: 0 rostro(s), emociones: 
+ Frame 210: 0 rostro(s), emociones: 
+ Frame 240: 0 rostro(s), emociones: 
+ Frame 270: 0 rostro(s), emociones: 
+ Frame 300: 3 rostro(s), emociones: Happy, Sad, Happy
+ Frame 330: 2 rostro(s), emociones: Happy, Sad
+ Frame 360: 1 rostro(s), emociones: Angry
+ Frame 390: 1 rostro(s), emociones: Angry
+ Frame 420: 0 rostro(s), emociones: 
+
+Recomendaciones IA:
+No se encontraron recomendaciones.

@@ -1,11 +1,96 @@
-opencv-python
-tensorflow
-keras
-numpy
-matplotlib
-plotly
-pydub
-speechrecognition
-streamlit
+# Dependencias principales del Sistema de Análisis Emocional Multimodal
+# ========================================================================
 
+# Framework web y visualización
+streamlit>=1.28.0
+plotly>=5.17.0
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Procesamiento de imágenes y video  
+opencv-python>=4.8.0
+Pillow>=10.0.0
+
+# Machine Learning y Deep Learning
+tensorflow>=2.13.0
+keras>=2.13.0
+scikit-learn>=1.3.0
+
+# Procesamiento de audio
+pydub>=0.25.0
+SpeechRecognition>=3.10.0
+
+# Visualización y gráficos
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Utilidades web y HTTP
+requests>=2.31.0
+urllib3>=2.0.0
+
+# Procesamiento de datos
+scipy>=1.11.0
+
+# Audio processing (opcional, puede causar problemas en algunos sistemas)
+# pyaudio>=0.2.11
+
+# Manejo de archivos y documentos
+openpyxl>=3.1.0
+xlsxwriter>=3.1.0
+
+# Utilidades de sistema
+python-dateutil>=2.8.0
+pytz>=2023.3
+tqdm>=4.66.0
+
+# Dependencias adicionales que pueden ser necesarias
+typing-extensions>=4.7.0
+
+# Si tienes problemas con alguna dependencia, prueba estas alternativas:
+# opencv-python-headless>=4.8.0  # Alternativa a opencv-python
+# tensorflow-cpu>=2.13.0  # Si no tienes GPU
+
+# Opcional: GPU support para TensorFlow (descomenta si tienes GPU NVIDIA)
+# tensorflow-gpu>=2.13.0
+
+# Opcional: Procesamiento avanzado de audio (descomenta si necesitas)
+# librosa>=0.10.0
+# soundfile>=0.12.0
+
+# Opcional: Modelos de lenguaje adicionales (descomenta si necesitas)
+# transformers>=4.33.0
+# torch>=2.0.0
+
+# Dependencias de desarrollo (opcional)
+# pytest>=7.4.0
+# black>=23.7.0
+# flake8>=6.0.0
+
+# Notas de instalación:
+# ===================
+# 
+# Para instalar todas las dependencias:
+# pip install -r requirements.txt
+#
+# Para crear un entorno virtual (recomendado):
+# python -m venv venv
+# source venv/bin/activate  # En Windows: venv\Scripts\activate
+# pip install -r requirements.txt
+#
+# Si tienes problemas con pyaudio en Windows:
+# pip install pipwin
+# pipwin install pyaudio
+#
+# Si tienes problemas con OpenCV:
+# pip uninstall opencv-python
+# pip install opencv-python-headless
+#
+# Si tienes problemas con TensorFlow:
+# pip install tensorflow-cpu  # Versión solo CPU
+#
+# Para sistemas con GPU NVIDIA (opcional):
+# pip install tensorflow-gpu
+#
+# Verificar instalación:
+# python -c "import streamlit, cv2, tensorflow; print('✅ Dependencias principales instaladas')"
 

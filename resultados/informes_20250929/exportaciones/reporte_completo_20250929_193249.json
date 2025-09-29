@@ -1,0 +1,323 @@
+{
+  "metadata": {
+    "fecha_generacion": "2025-09-29T19:32:49.544501",
+    "version_sistema": "2.0"
+  },
+  "informacion_personal": "reporte_sesion_20250929_193228.json",
+  "resultados_analisis": {
+    "session_id": "sesion_20250929_193228",
+    "timestamp_inicio": "2025-09-29T19:32:28.041636",
+    "video_analizado": "WhatsApp Video 2025-08-20 at 14.23.53.mp4",
+    "configuracion_usada": {
+      "intervalo_analisis_ms": 1000,
+      "umbral_confianza": 0.5,
+      "priorizar_emociones": [],
+      "alertas_especiales": [],
+      "guardar_frames": true
+    },
+    "datos_personales": {
+      "nombre": "",
+      "edad": 5,
+      "diagnostico": "",
+      "rol_usuario": "Padre/Madre",
+      "contexto_video": ""
+    },
+    "etapas_completadas": [
+      "analisis_emociones",
+      "analisis_audio",
+      "recomendaciones_genericas",
+      "recomendaciones_ia"
+    ],
+    "errores": [],
+    "emociones": [
+      {
+        "frame_id": 0,
+        "timestamp": "20250929_193228_093",
+        "tiempo_video": 0.0,
+        "num_faces": 1,
+        "emociones": [
+          {
+            "emotion": "Happy",
+            "confidence": 0.6205795210820277,
+            "quality_score": 0.604,
+            "high_confidence": false,
+            "frame_id": 0,
+            "face_id": 0,
+            "timestamp": "2025-09-29T19:32:28.671386",
+            "image_size": [
+              239,
+              239
+            ],
+            "bbox": [
+              "166",
+              "57",
+              "239",
+              "239"
+            ],
+            "area": "57121",
+            "saved_face_path": "./resultados\\fotogramas_detectados\\sesion_20250929_193022\\rostros\\rostro_f000000_r00_Happy_conf0.62_qual0.60_20250929_193228_671.jpg"
+          }
+        ],
+        "frame_path": "./resultados\\fotogramas_detectados\\sesion_20250929_193022\\frames\\frame_000000_20250929_193228_093.jpg",
+        "calidad_promedio": 0.604,
+        "emociones_filtradas": 0
+      }
+    ],
+    "estadisticas_emociones": {
+      "frames_analizados": 1,
+      "frames_con_detecciones": 1,
+      "total_detecciones": 1,
+      "promedio_detecciones_por_frame": 1.0,
+      "distribucion_emociones": {
+        "Happy": 1
+      },
+      "emocion_predominante": {
+        "emocion": "Happy",
+        "count": 1,
+        "porcentaje": 100.0
+      },
+      "confianza_por_emocion": {
+        "Happy": {
+          "promedio": 0.6205795210820277,
+          "mediana": 0.6205795210820277,
+          "std": 0.0,
+          "min": 0.6205795210820277,
+          "max": 0.6205795210820277
+        }
+      }
+    },
+    "audio": {
+      "transcription": "me siento mal en la cabeza me siento mal la cabeza mamá porque no quiero ir al colegio porque me hace mal Qué te hace mal el trabajo me siento mal decirle a Marcela que no voy",
+      "palabras_detectadas": [
+        "me",
+        "siento",
+        "mal",
+        "en",
+        "la",
+        "cabeza",
+        "me",
+        "siento",
+        "mal",
+        "la",
+        "cabeza",
+        "mamá",
+        "porque",
+        "no",
+        "quiero",
+        "ir",
+        "al",
+        "colegio",
+        "porque",
+        "me",
+        "hace",
+        "mal",
+        "qué",
+        "te",
+        "hace",
+        "mal",
+        "el",
+        "trabajo",
+        "me",
+        "siento",
+        "mal",
+        "decirle",
+        "marcela",
+        "que",
+        "no",
+        "voy"
+      ],
+      "palabras_totales": 36,
+      "intentos_comunicacion": 36,
+      "palabras_infantiles": [
+        "siento",
+        "siento",
+        "no",
+        "quiero",
+        "siento",
+        "no"
+      ],
+      "longitud_promedio_palabra": 3.83,
+      "calidad_comunicacion": "comunicacion_activa",
+      "confidence": "alta",
+      "success": true,
+      "info_extraccion": {
+        "ruta_audio": "./audio_extraido\\audio_extraido_20250929_193233.wav",
+        "duracion_segundos": 16.858,
+        "volumen_promedio_db": -22.94326100115174,
+        "frecuencia_muestreo": 16000,
+        "canales": 1,
+        "timestamp": "20250929_193233",
+        "success": true
+      },
+      "analisis_segmentos": [
+        {
+          "transcription": "me siento en la cabeza me siento mal la cabeza",
+          "palabras_detectadas": [
+            "me",
+            "siento",
+            "en",
+            "la",
+            "cabeza",
+            "me",
+            "siento",
+            "mal",
+            "la",
+            "cabeza"
+          ],
+          "palabras_totales": 10,
+          "intentos_comunicacion": 10,
+          "palabras_infantiles": [
+            "siento",
+            "siento"
+          ],
+          "longitud_promedio_palabra": 3.7,
+          "calidad_comunicacion": "comunicacion_activa",
+          "confidence": "alta",
+          "success": true,
+          "tiempo_inicio": 0,
+          "tiempo_fin": 5,
+          "volumen_segmento": -27.232701412303776
+        },
+        {
+          "transcription": "cómo te sentís mal de la cabeza porque no quiero ir al colegio porque me hace mal",
+          "palabras_detectadas": [
+            "cómo",
+            "te",
+            "sentís",
+            "mal",
+            "de",
+            "la",
+            "cabeza",
+            "porque",
+            "no",
+            "quiero",
+            "ir",
+            "al",
+            "colegio",
+            "porque",
+            "me",
+            "hace",
+            "mal"
+          ],
+          "palabras_totales": 17,
+          "intentos_comunicacion": 17,
+          "palabras_infantiles": [
+            "no",
+            "quiero"
+          ],
+          "longitud_promedio_palabra": 3.82,
+          "calidad_comunicacion": "comunicacion_activa",
+          "confidence": "alta",
+          "success": true,
+          "tiempo_inicio": 5,
+          "tiempo_fin": 10,
+          "volumen_segmento": -22.773810791096757
+        },
+        {
+          "transcription": "el trabajo me siento mal decirle",
+          "palabras_detectadas": [
+            "el",
+            "trabajo",
+            "me",
+            "siento",
+            "mal",
+            "decirle"
+          ],
+          "palabras_totales": 6,
+          "intentos_comunicacion": 6,
+          "palabras_infantiles": [
+            "siento"
+          ],
+          "longitud_promedio_palabra": 4.5,
+          "calidad_comunicacion": "comunicacion_basica",
+          "confidence": "alta",
+          "success": true,
+          "tiempo_inicio": 10,
+          "tiempo_fin": 15,
+          "volumen_segmento": -22.154384138667645
+        },
+        {
+          "transcription": "será que no voy",
+          "palabras_detectadas": [
+            "será",
+            "que",
+            "no",
+            "voy"
+          ],
+          "palabras_totales": 4,
+          "intentos_comunicacion": 4,
+          "palabras_infantiles": [
+            "no"
+          ],
+          "longitud_promedio_palabra": 3.0,
+          "calidad_comunicacion": "comunicacion_basica",
+          "confidence": "alta",
+          "success": true,
+          "tiempo_inicio": 15,
+          "tiempo_fin": 16.858,
+          "volumen_segmento": -19.823673323854784
+        }
+      ],
+      "metricas_audio": {
+        "segmentos_analizados": 4,
+        "segmentos_con_comunicacion": 4,
+        "total_palabras_detectadas": 37,
+        "total_intentos_comunicativos": 37,
+        "promedio_palabras_por_segmento": 9.25,
+        "porcentaje_segmentos_activos": 100.0,
+        "analisis_volumen": {
+          "volumen_promedio_db": -22.996142416480744,
+          "volumen_max_db": -19.823673323854784,
+          "volumen_min_db": -27.232701412303776,
+          "variabilidad_volumen": 2.681929371677636
+        }
+      }
+    },
+    "recomendaciones_genericas": [
+      "😊 Excelente regulación emocional detectada - mantener estrategias actuales",
+      "📈 Aprovechar estado emocional positivo para nuevos aprendizajes",
+      "🎯 Usar emociones positivas como refuerzo natural en actividades",
+      "🎉 Estado emocional positivo detectado - excelente base para aprendizaje",
+      "📚 Aprovechar motivación alta para introducir nuevas habilidades",
+      "🎯 Usar refuerzo positivo natural ya presente",
+      "📊 Expresión emocional muy limitada - estimular rango expresivo",
+      "💬 Fomentar conversación elaborada y narrativa",
+      "📖 Trabajar comprensión de textos y seguimiento de instrucciones complejas",
+      "🎯 Desarrollar habilidades pragmáticas del lenguaje",
+      "👶 Fomentar vocabulario apropiado para la edad cronológica",
+      "📅 Realizar seguimiento en 2-3 semanas para evaluar progreso",
+      "👨‍👩‍👧‍👦 Involucrar a todos los cuidadores en la implementación de estrategias",
+      "📊 Documentar cambios observados para ajustar intervenciones"
+    ],
+    "recomendaciones_ia": {
+      "recomendaciones_generales": [],
+      "recomendaciones_especificas": [],
+      "actividades_sugeridas": [
+        "🎵 Sesiones de musicoterapia 3 veces por semana",
+        "🎨 Actividades de expresión artística libre",
+        "🤗 Tiempo de juego estructurado con adulto significativo",
+        "📖 Lectura interactiva diaria con preguntas simples",
+        "🎭 Juegos de imitación vocal y gestual",
+        "🔤 Expansión de vocabulario temático semanal"
+      ],
+      "objetivos_terapeuticos": [],
+      "alertas": [
+        "⚠️ Nivel alto de tristeza detectado - considerar evaluación emocional"
+      ],
+      "metadata": {
+        "fecha_generacion": "2025-09-29 19:30:40",
+        "diagnostico_procesado": "",
+        "nivel_confianza": "media",
+        "proxima_revision": "2 semanas"
+      },
+      "recursos": [],
+      "prioridad_alta": [
+        "⚠️ Nivel alto de tristeza detectado - considerar evaluación emocional"
+      ]
+    },
+    "dashboard_path": "./resultados\\informes_20250929\\graficos\\dashboard_sesion_20250929_193228.png",
+    "histograma_path": "./resultados\\informes_20250929\\graficos\\dashboard_sesion_20250929_193228.png",
+    "timeline_path": "./resultados\\informes_20250929\\graficos\\dashboard_sesion_20250929_193228.png",
+    "reporte_path": ""
+  }
+}

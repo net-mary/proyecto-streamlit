@@ -1,0 +1,255 @@
+{
+  "metadata": {
+    "fecha_generacion": "2025-10-05T14:13:28.821377",
+    "version_sistema": "2.0"
+  },
+  "informacion_personal": {
+    "nombre": "",
+    "edad": 5,
+    "diagnostico": "",
+    "rol_usuario": "Padre/Madre",
+    "contexto_video": ""
+  },
+  "resultados_analisis": {
+    "session_id": "sesion_20251005_141255",
+    "timestamp_inicio": "2025-10-05T14:12:55.498202",
+    "video_analizado": "WhatsApp Video 2025-08-20 at 14.23.53.mp4",
+    "configuracion_usada": {
+      "intervalo_analisis_ms": 1000,
+      "umbral_confianza": 0.5,
+      "priorizar_emociones": [],
+      "alertas_especiales": [],
+      "guardar_frames": true
+    },
+    "datos_personales": {
+      "nombre": "",
+      "edad": 5,
+      "diagnostico": "",
+      "rol_usuario": "Padre/Madre",
+      "contexto_video": ""
+    },
+    "etapas_completadas": [
+      "analisis_emociones",
+      "analisis_audio",
+      "recomendaciones_genericas",
+      "recomendaciones_ia"
+    ],
+    "errores": [],
+    "emociones": [],
+    "estadisticas_emociones": {},
+    "audio": {
+      "transcription": "me siento mal en la cabeza me siento mal la cabeza mamá porque no quiero ir al colegio porque me hace mal Qué te hace mal el trabajo me siento mal decirle a Marcela que no voy",
+      "palabras_detectadas": [
+        "me",
+        "siento",
+        "mal",
+        "en",
+        "la",
+        "cabeza",
+        "me",
+        "siento",
+        "mal",
+        "la",
+        "cabeza",
+        "mamá",
+        "porque",
+        "no",
+        "quiero",
+        "ir",
+        "al",
+        "colegio",
+        "porque",
+        "me",
+        "hace",
+        "mal",
+        "qué",
+        "te",
+        "hace",
+        "mal",
+        "el",
+        "trabajo",
+        "me",
+        "siento",
+        "mal",
+        "decirle",
+        "marcela",
+        "que",
+        "no",
+        "voy"
+      ],
+      "palabras_totales": 36,
+      "intentos_comunicacion": 36,
+      "palabras_infantiles": [
+        "siento",
+        "siento",
+        "no",
+        "quiero",
+        "siento",
+        "no"
+      ],
+      "longitud_promedio_palabra": 3.83,
+      "calidad_comunicacion": "comunicacion_activa",
+      "confidence": "alta",
+      "success": true,
+      "info_extraccion": {
+        "ruta_audio": "./audio_extraido\\audio_extraido_20251005_141308.wav",
+        "duracion_segundos": 16.858,
+        "volumen_promedio_db": -22.94326100115174,
+        "frecuencia_muestreo": 16000,
+        "canales": 1,
+        "timestamp": "20251005_141308",
+        "success": true
+      },
+      "analisis_segmentos": [
+        {
+          "transcription": "me siento en la cabeza me siento mal la cabeza",
+          "palabras_detectadas": [
+            "me",
+            "siento",
+            "en",
+            "la",
+            "cabeza",
+            "me",
+            "siento",
+            "mal",
+            "la",
+            "cabeza"
+          ],
+          "palabras_totales": 10,
+          "intentos_comunicacion": 10,
+          "palabras_infantiles": [
+            "siento",
+            "siento"
+          ],
+          "longitud_promedio_palabra": 3.7,
+          "calidad_comunicacion": "comunicacion_activa",
+          "confidence": "alta",
+          "success": true,
+          "tiempo_inicio": 0,
+          "tiempo_fin": 5,
+          "volumen_segmento": -27.232701412303776
+        },
+        {
+          "transcription": "cómo te sentís mal de la cabeza porque no quiero ir al colegio porque me hace mal",
+          "palabras_detectadas": [
+            "cómo",
+            "te",
+            "sentís",
+            "mal",
+            "de",
+            "la",
+            "cabeza",
+            "porque",
+            "no",
+            "quiero",
+            "ir",
+            "al",
+            "colegio",
+            "porque",
+            "me",
+            "hace",
+            "mal"
+          ],
+          "palabras_totales": 17,
+          "intentos_comunicacion": 17,
+          "palabras_infantiles": [
+            "no",
+            "quiero"
+          ],
+          "longitud_promedio_palabra": 3.82,
+          "calidad_comunicacion": "comunicacion_activa",
+          "confidence": "alta",
+          "success": true,
+          "tiempo_inicio": 5,
+          "tiempo_fin": 10,
+          "volumen_segmento": -22.773810791096757
+        },
+        {
+          "transcription": "el trabajo me siento mal",
+          "palabras_detectadas": [
+            "el",
+            "trabajo",
+            "me",
+            "siento",
+            "mal"
+          ],
+          "palabras_totales": 5,
+          "intentos_comunicacion": 5,
+          "palabras_infantiles": [
+            "siento"
+          ],
+          "longitud_promedio_palabra": 4.0,
+          "calidad_comunicacion": "comunicacion_basica",
+          "confidence": "alta",
+          "success": true,
+          "tiempo_inicio": 10,
+          "tiempo_fin": 15,
+          "volumen_segmento": -22.154384138667645
+        },
+        {
+          "transcription": "será que no voy",
+          "palabras_detectadas": [
+            "será",
+            "que",
+            "no",
+            "voy"
+          ],
+          "palabras_totales": 4,
+          "intentos_comunicacion": 4,
+          "palabras_infantiles": [
+            "no"
+          ],
+          "longitud_promedio_palabra": 3.0,
+          "calidad_comunicacion": "comunicacion_basica",
+          "confidence": "alta",
+          "success": true,
+          "tiempo_inicio": 15,
+          "tiempo_fin": 16.858,
+          "volumen_segmento": -19.823673323854784
+        }
+      ],
+      "metricas_audio": {
+        "segmentos_analizados": 4,
+        "segmentos_con_comunicacion": 4,
+        "total_palabras_detectadas": 36,
+        "total_intentos_comunicativos": 36,
+        "promedio_palabras_por_segmento": 9.0,
+        "porcentaje_segmentos_activos": 100.0,
+        "analisis_volumen": {
+          "volumen_promedio_db": -22.996142416480744,
+          "volumen_max_db": -19.823673323854784,
+          "volumen_min_db": -27.232701412303776,
+          "variabilidad_volumen": 2.681929371677636
+        }
+      }
+    },
+    "recomendaciones_genericas": [
+      "💬 Fomentar conversación elaborada y narrativa",
+      "📖 Trabajar comprensión de textos y seguimiento de instrucciones complejas",
+      "🎯 Desarrollar habilidades pragmáticas del lenguaje",
+      "👶 Fomentar vocabulario apropiado para la edad cronológica",
+      "📸 Baja confianza en detección emocional - considerar mejores condiciones de grabación para futuros análisis",
+      "🎥 Baja detección facial - asegurar buena iluminación y posición del niño frente a la cámara",
+      "📅 Realizar seguimiento en 2-3 semanas para evaluar progreso",
+      "👨‍👩‍👧‍👦 Involucrar a todos los cuidadores en la implementación de estrategias",
+      "📊 Documentar cambios observados para ajustar intervenciones"
+    ],
+    "recomendaciones_ia": {
+      "recomendaciones_generales": [],
+      "recomendaciones_especificas": [],
+      "actividades_sugeridas": [],
+      "objetivos_terapeuticos": [],
+      "alertas": [],
+      "metadata": {
+        "fecha_generacion": "2025-10-05 14:13:27",
+        "diagnostico_procesado": "",
+        "nivel_confianza": "media",
+        "proxima_revision": "2 semanas"
+      },
+      "recursos": []
+    },
+    "dashboard_path": "./resultados\\informes_20251005\\graficos\\dashboard_sesion_20251005_141255.png",
+    "reporte_path": "./resultados\\informes_20251005\\reportes\\reporte_sesion_20251005_141255.txt",
+    "csv_path": ""
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "sesion_info": {
+    "timestamp": "20251003_182800",
+    "video_analizado": "WhatsApp Video 2025-08-25 at 18.52.03.mp4",
+    "duracion_analisis": "0:00:03.465902"
+  },
+  "estadisticas": {
+    "frames_analizados": 5,
+    "rostros_detectados": 6,
+    "emociones_analizadas": 6,
+    "detecciones_alta_confianza": 0
+  },
+  "distribucion_emociones": {
+    "Sad": 5,
+    "Neutral": 1
+  },
+  "metricas_calidad": {
+    "confianza_promedio": 0.3810828488094804,
+    "calidad_promedio": 0.6415000000000001,
+    "confianza_maxima": 0.5177235559559809,
+    "confianza_minima": 0.26035010167128975
+  },
+  "archivos_generados": {
+    "directorio_sesion": "./resultados\\fotogramas_detectados\\sesion_20251003_182800",
+    "directorio_frames": "./resultados\\fotogramas_detectados\\sesion_20251003_182800\\frames",
+    "directorio_rostros": "./resultados\\fotogramas_detectados\\sesion_20251003_182800\\rostros"
+  }
+}

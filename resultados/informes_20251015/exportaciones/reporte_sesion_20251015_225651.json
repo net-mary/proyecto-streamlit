@@ -1,0 +1,2540 @@
+{
+  "metadata": {
+    "fecha_generacion": "2025-10-15T22:57:05.632872",
+    "version_sistema": "2.0"
+  },
+  "informacion_personal": {
+    "nombre": "",
+    "edad": 5,
+    "diagnostico": "",
+    "rol_usuario": "Padre/Madre",
+    "contexto_video": ""
+  },
+  "resultados_analisis": {
+    "session_id": "sesion_20251015_225651",
+    "timestamp_inicio": "2025-10-15T22:56:51.347328",
+    "video_analizado": "WhatsApp Video 2025-08-25 at 18.52.03.mp4",
+    "configuracion_usada": {
+      "intervalo_analisis_ms": 1000,
+      "umbral_confianza": 0.05,
+      "priorizar_emociones": [],
+      "alertas_especiales": [],
+      "guardar_frames": true
+    },
+    "datos_personales": {
+      "nombre": "",
+      "edad": 5,
+      "diagnostico": "",
+      "rol_usuario": "Padre/Madre",
+      "contexto_video": ""
+    },
+    "etapas_completadas": [
+      "analisis_emociones",
+      "analisis_audio",
+      "recomendaciones_genericas",
+      "recomendaciones_ia"
+    ],
+    "errores": [],
+    "emociones": [
+      {
+        "frame_id": 30,
+        "timestamp": "20251015_225651_922",
+        "tiempo_video": 0.9998558139534884,
+        "num_faces": 1,
+        "emociones": [
+          {
+            "emotion": "neutral",
+            "emotion_es": "Neutro",
+            "confidence": 0.29179777504348503,
+            "high_confidence": false,
+            "frame_id": 30,
+            "face_id": 0,
+            "timestamp": "2025-10-15T22:56:53.743519",
+            "rostro_id": 0,
+            "bbox": [
+              "204",
+              "321",
+              "121",
+              "121"
+            ]
+          },
+          {
+            "emotion": "sad",
+            "emotion_es": "Triste",
+            "confidence": 0.22605002241761132,
+            "high_confidence": false,
+            "frame_id": 30,
+            "face_id": 0,
+            "timestamp": "2025-10-15T22:56:53.743529",
+            "rostro_id": 0,
+            "bbox": [
+              "204",
+              "321",
+              "121",
+              "121"
+            ]
+          },
+          {
+            "emotion": "happy",
+            "emotion_es": "Feliz",
+            "confidence": 0.17886520919089893,
+            "high_confidence": false,
+            "frame_id": 30,
+            "face_id": 0,
+            "timestamp": "2025-10-15T22:56:53.743532",
+            "rostro_id": 0,
+            "bbox": [
+              "204",
+              "321",
+              "121",
+              "121"
+            ]
+          },
+          {
+            "emotion": "fear",
+            "emotion_es": "Temeroso",
+            "confidence": 0.10799769847037707,
+            "high_confidence": false,
+            "frame_id": 30,
+            "face_id": 0,
+            "timestamp": "2025-10-15T22:56:53.743534",
+            "rostro_id": 0,
+            "bbox": [
+              "204",
+              "321",
+              "121",
+              "121"
+            ]
+          },
+          {
+            "emotion": "surprise",
+            "emotion_es": "Sorprendido",
+            "confidence": 0.09075000672836439,
+            "high_confidence": false,
+            "frame_id": 30,
+            "face_id": 0,
+            "timestamp": "2025-10-15T22:56:53.743537",
+            "rostro_id": 0,
+            "bbox": [
+              "204",
+              "321",
+              "121",
+              "121"
+            ]
+          },
+          {
+            "emotion": "angry",
+            "emotion_es": "Enojado",
+            "confidence": 0.07940971801260117,
+            "high_confidence": false,
+            "frame_id": 30,
+            "face_id": 0,
+            "timestamp": "2025-10-15T22:56:53.743539",
+            "rostro_id": 0,
+            "bbox": [
+              "204",
+              "321",
+              "121",
+              "121"
+            ]
+          }
+        ],
+        "rostros": [
+          {
+            "emociones": [
+              {
+                "emotion": "neutral",
+                "emotion_es": "Neutro",
+                "confidence": 0.29179777504348503,
+                "high_confidence": false,
+                "frame_id": 30,
+                "face_id": 0,
+                "timestamp": "2025-10-15T22:56:53.743519"
+              },
+              {
+                "emotion": "sad",
+                "emotion_es": "Triste",
+                "confidence": 0.22605002241761132,
+                "high_confidence": false,
+                "frame_id": 30,
+                "face_id": 0,
+                "timestamp": "2025-10-15T22:56:53.743529"
+              },
+              {
+                "emotion": "happy",
+                "emotion_es": "Feliz",
+                "confidence": 0.17886520919089893,
+                "high_confidence": false,
+                "frame_id": 30,
+                "face_id": 0,
+                "timestamp": "2025-10-15T22:56:53.743532"
+              },
+              {
+                "emotion": "fear",
+                "emotion_es": "Temeroso",
+                "confidence": 0.10799769847037707,
+                "high_confidence": false,
+                "frame_id": 30,
+                "face_id": 0,
+                "timestamp": "2025-10-15T22:56:53.743534"
+              },
+              {
+                "emotion": "surprise",
+                "emotion_es": "Sorprendido",
+                "confidence": 0.09075000672836439,
+                "high_confidence": false,
+                "frame_id": 30,
+                "face_id": 0,
+                "timestamp": "2025-10-15T22:56:53.743537"
+              },
+              {
+                "emotion": "angry",
+                "emotion_es": "Enojado",
+                "confidence": 0.07940971801260117,
+                "high_confidence": false,
+                "frame_id": 30,
+                "face_id": 0,
+                "timestamp": "2025-10-15T22:56:53.743539"
+              }
+            ],
+            "emocion_principal": {
+              "emotion": "neutral",
+              "emotion_es": "Neutro",
+              "confidence": 0.29179777504348503,
+              "high_confidence": false,
+              "frame_id": 30,
+              "face_id": 0,
+              "timestamp": "2025-10-15T22:56:53.743519"
+            },
+            "num_emociones_detectadas": 6,
+            "frame_id": 30,
+            "face_id": 0,
+            "timestamp": "2025-10-15T22:56:53.743543",
+            "image_size": [
+              145,
+              145
+            ],
+            "distribucion_completa": {
+              "Angry": 0.07940971801260117,
+              "Disgust": 0.02512957013666196,
+              "Fear": 0.10799769847037707,
+              "Happy": 0.17886520919089893,
+              "Sad": 0.22605002241761132,
+              "Surprise": 0.09075000672836439,
+              "Neutral": 0.29179777504348503
+            },
+            "bbox": [
+              "204",
+              "321",
+              "121",
+              "121"
+            ],
+            "area": "14641"
+          }
+        ],
+        "frame_path": "./resultados\\fotogramas_detectados\\sesion_20251015_225649\\frames\\frame_000030_20251015_225651_922.jpg",
+        "total_emociones_detectadas": 6
+      },
+      {
+        "frame_id": 90,
+        "timestamp": "20251015_225653_953",
+        "tiempo_video": 2.999567441860465,
+        "num_faces": 1,
+        "emociones": [
+          {
+            "emotion": "happy",
+            "emotion_es": "Feliz",
+            "confidence": 0.5587993327349138,
+            "high_confidence": false,
+            "frame_id": 90,
+            "face_id": 0,
+            "timestamp": "2025-10-15T22:56:54.244538",
+            "rostro_id": 0,
+            "bbox": [
+              "112",
+              "345",
+              "164",
+              "164"
+            ]
+          },
+          {
+            "emotion": "sad",
+            "emotion_es": "Triste",
+            "confidence": 0.1186712944562787,
+            "high_confidence": false,
+            "frame_id": 90,
+            "face_id": 0,
+            "timestamp": "2025-10-15T22:56:54.244548",
+            "rostro_id": 0,
+            "bbox": [
+              "112",
+              "345",
+              "164",
+              "164"
+            ]
+          },
+          {
+            "emotion": "surprise",
+            "emotion_es": "Sorprendido",
+            "confidence": 0.10568052271502115,
+            "high_confidence": false,
+            "frame_id": 90,
+            "face_id": 0,
+            "timestamp": "2025-10-15T22:56:54.244550",
+            "rostro_id": 0,
+            "bbox": [
+              "112",
+              "345",
+              "164",
+              "164"
+            ]
+          },
+          {
+            "emotion": "fear",
+            "emotion_es": "Temeroso",
+            "confidence": 0.07041942984509647,
+            "high_confidence": false,
+            "frame_id": 90,
+            "face_id": 0,
+            "timestamp": "2025-10-15T22:56:54.244553",
+            "rostro_id": 0,
+            "bbox": [
+              "112",
+              "345",
+              "164",
+              "164"
+            ]
+          },
+          {
+            "emotion": "neutral",
+            "emotion_es": "Neutro",
+            "confidence": 0.06179910954108164,
+            "high_confidence": false,
+            "frame_id": 90,
+            "face_id": 0,
+            "timestamp": "2025-10-15T22:56:54.244555",
+            "rostro_id": 0,
+            "bbox": [
+              "112",
+              "345",
+              "164",
+              "164"
+            ]
+          },
+          {
+            "emotion": "angry",
+            "emotion_es": "Enojado",
+            "confidence": 0.061666126833503615,
+            "high_confidence": false,
+            "frame_id": 90,
+            "face_id": 0,
+            "timestamp": "2025-10-15T22:56:54.244558",
+            "rostro_id": 0,
+            "bbox": [
+              "112",
+              "345",
+              "164",
+              "164"
+            ]
+          }
+        ],
+        "rostros": [
+          {
+            "emociones": [
+              {
+                "emotion": "happy",
+                "emotion_es": "Feliz",
+                "confidence": 0.5587993327349138,
+                "high_confidence": false,
+                "frame_id": 90,
+                "face_id": 0,
+                "timestamp": "2025-10-15T22:56:54.244538"
+              },
+              {
+                "emotion": "sad",
+                "emotion_es": "Triste",
+                "confidence": 0.1186712944562787,
+                "high_confidence": false,
+                "frame_id": 90,
+                "face_id": 0,
+                "timestamp": "2025-10-15T22:56:54.244548"
+              },
+              {
+                "emotion": "surprise",
+                "emotion_es": "Sorprendido",
+                "confidence": 0.10568052271502115,
+                "high_confidence": false,
+                "frame_id": 90,
+                "face_id": 0,
+                "timestamp": "2025-10-15T22:56:54.244550"
+              },
+              {
+                "emotion": "fear",
+                "emotion_es": "Temeroso",
+                "confidence": 0.07041942984509647,
+                "high_confidence": false,
+                "frame_id": 90,
+                "face_id": 0,
+                "timestamp": "2025-10-15T22:56:54.244553"
+              },
+              {
+                "emotion": "neutral",
+                "emotion_es": "Neutro",
+                "confidence": 0.06179910954108164,
+                "high_confidence": false,
+                "frame_id": 90,
+                "face_id": 0,
+                "timestamp": "2025-10-15T22:56:54.244555"
+              },
+              {
+                "emotion": "angry",
+                "emotion_es": "Enojado",
+                "confidence": 0.061666126833503615,
+                "high_confidence": false,
+                "frame_id": 90,
+                "face_id": 0,
+                "timestamp": "2025-10-15T22:56:54.244558"
+              }
+            ],
+            "emocion_principal": {
+              "emotion": "happy",
+              "emotion_es": "Feliz",
+              "confidence": 0.5587993327349138,
+              "high_confidence": false,
+              "frame_id": 90,
+              "face_id": 0,
+              "timestamp": "2025-10-15T22:56:54.244538"
+            },
+            "num_emociones_detectadas": 6,
+            "frame_id": 90,
+            "face_id": 0,
+            "timestamp": "2025-10-15T22:56:54.244564",
+            "image_size": [
+              196,
+              196
+            ],
+            "distribucion_completa": {
+              "Angry": 0.061666126833503615,
+              "Disgust": 0.02296418387410484,
+              "Fear": 0.07041942984509647,
+              "Happy": 0.5587993327349138,
+              "Sad": 0.1186712944562787,
+              "Surprise": 0.10568052271502115,
+              "Neutral": 0.06179910954108164
+            },
+            "bbox": [
+              "112",
+              "345",
+              "164",
+              "164"
+            ],
+            "area": "26896"
+          }
+        ],
+        "frame_path": "./resultados\\fotogramas_detectados\\sesion_20251015_225649\\frames\\frame_000090_20251015_225653_953.jpg",
+        "total_emociones_detectadas": 6
+      },
+      {
+        "frame_id": 120,
+        "timestamp": "20251015_225654_306",
+        "tiempo_video": 3.9994232558139537,
+        "num_faces": 2,
+        "emociones": [
+          {
+            "emotion": "sad",
+            "emotion_es": "Triste",
+            "confidence": 0.29463793369981733,
+            "high_confidence": false,
+            "frame_id": 120,
+            "face_id": 0,
+            "timestamp": "2025-10-15T22:56:54.592484",
+            "rostro_id": 0,
+            "bbox": [
+              "423",
+              "126",
+              "45",
+              "45"
+            ]
+          },
+          {
+            "emotion": "happy",
+            "emotion_es": "Feliz",
+            "confidence": 0.22583874529779657,
+            "high_confidence": false,
+            "frame_id": 120,
+            "face_id": 0,
+            "timestamp": "2025-10-15T22:56:54.592492",
+            "rostro_id": 0,
+            "bbox": [
+              "423",
+              "126",
+              "45",
+              "45"
+            ]
+          },
+          {
+            "emotion": "angry",
+            "emotion_es": "Enojado",
+            "confidence": 0.21564629025137103,
+            "high_confidence": false,
+            "frame_id": 120,
+            "face_id": 0,
+            "timestamp": "2025-10-15T22:56:54.592495",
+            "rostro_id": 0,
+            "bbox": [
+              "423",
+              "126",
+              "45",
+              "45"
+            ]
+          },
+          {
+            "emotion": "surprise",
+            "emotion_es": "Sorprendido",
+            "confidence": 0.08609175655042729,
+            "high_confidence": false,
+            "frame_id": 120,
+            "face_id": 0,
+            "timestamp": "2025-10-15T22:56:54.592497",
+            "rostro_id": 0,
+            "bbox": [
+              "423",
+              "126",
+              "45",
+              "45"
+            ]
+          },
+          {
+            "emotion": "fear",
+            "emotion_es": "Temeroso",
+            "confidence": 0.08263967232659461,
+            "high_confidence": false,
+            "frame_id": 120,
+            "face_id": 0,
+            "timestamp": "2025-10-15T22:56:54.592499",
+            "rostro_id": 0,
+            "bbox": [
+              "423",
+              "126",
+              "45",
+              "45"
+            ]
+          },
+          {
+            "emotion": "neutral",
+            "emotion_es": "Neutro",
+            "confidence": 0.0740974717488508,
+            "high_confidence": false,
+            "frame_id": 120,
+            "face_id": 0,
+            "timestamp": "2025-10-15T22:56:54.592501",
+            "rostro_id": 0,
+            "bbox": [
+              "423",
+              "126",
+              "45",
+              "45"
+            ]
+          },
+          {
+            "emotion": "happy",
+            "emotion_es": "Feliz",
+            "confidence": 0.470717058592574,
+            "high_confidence": false,
+            "frame_id": 120,
+            "face_id": 1,
+            "timestamp": "2025-10-15T22:56:54.809794",
+            "rostro_id": 1,
+            "bbox": [
+              "109",
+              "310",
+              "154",
+              "154"
+            ]
+          },
+          {
+            "emotion": "sad",
+            "emotion_es": "Triste",
+            "confidence": 0.13066571844826724,
+            "high_confidence": false,
+            "frame_id": 120,
+            "face_id": 1,
+            "timestamp": "2025-10-15T22:56:54.809809",
+            "rostro_id": 1,
+            "bbox": [
+              "109",
+              "310",
+              "154",
+              "154"
+            ]
+          },
+          {
+            "emotion": "fear",
+            "emotion_es": "Temeroso",
+            "confidence": 0.12651576214553661,
+            "high_confidence": false,
+            "frame_id": 120,
+            "face_id": 1,
+            "timestamp": "2025-10-15T22:56:54.809815",
+            "rostro_id": 1,
+            "bbox": [
+              "109",
+              "310",
+              "154",
+              "154"
+            ]
+          },
+          {
+            "emotion": "surprise",
+            "emotion_es": "Sorprendido",
+            "confidence": 0.11007623955673472,
+            "high_confidence": false,
+            "frame_id": 120,
+            "face_id": 1,
+            "timestamp": "2025-10-15T22:56:54.809821",
+            "rostro_id": 1,
+            "bbox": [
+              "109",
+              "310",
+              "154",
+              "154"
+            ]
+          },
+          {
+            "emotion": "angry",
+            "emotion_es": "Enojado",
+            "confidence": 0.08760211774788475,
+            "high_confidence": false,
+            "frame_id": 120,
+            "face_id": 1,
+            "timestamp": "2025-10-15T22:56:54.809826",
+            "rostro_id": 1,
+            "bbox": [
+              "109",
+              "310",
+              "154",
+              "154"
+            ]
+          },
+          {
+            "emotion": "neutral",
+            "emotion_es": "Neutro",
+            "confidence": 0.05080086272800859,
+            "high_confidence": false,
+            "frame_id": 120,
+            "face_id": 1,
+            "timestamp": "2025-10-15T22:56:54.809832",
+            "rostro_id": 1,
+            "bbox": [
+              "109",
+              "310",
+              "154",
+              "154"
+            ]
+          }
+        ],
+        "rostros": [
+          {
+            "emociones": [
+              {
+                "emotion": "sad",
+                "emotion_es": "Triste",
+                "confidence": 0.29463793369981733,
+                "high_confidence": false,
+                "frame_id": 120,
+                "face_id": 0,
+                "timestamp": "2025-10-15T22:56:54.592484"
+              },
+              {
+                "emotion": "happy",
+                "emotion_es": "Feliz",
+                "confidence": 0.22583874529779657,
+                "high_confidence": false,
+                "frame_id": 120,
+                "face_id": 0,
+                "timestamp": "2025-10-15T22:56:54.592492"
+              },
+              {
+                "emotion": "angry",
+                "emotion_es": "Enojado",
+                "confidence": 0.21564629025137103,
+                "high_confidence": false,
+                "frame_id": 120,
+                "face_id": 0,
+                "timestamp": "2025-10-15T22:56:54.592495"
+              },
+              {
+                "emotion": "surprise",
+                "emotion_es": "Sorprendido",
+                "confidence": 0.08609175655042729,
+                "high_confidence": false,
+                "frame_id": 120,
+                "face_id": 0,
+                "timestamp": "2025-10-15T22:56:54.592497"
+              },
+              {
+                "emotion": "fear",
+                "emotion_es": "Temeroso",
+                "confidence": 0.08263967232659461,
+                "high_confidence": false,
+                "frame_id": 120,
+                "face_id": 0,
+                "timestamp": "2025-10-15T22:56:54.592499"
+              },
+              {
+                "emotion": "neutral",
+                "emotion_es": "Neutro",
+                "confidence": 0.0740974717488508,
+                "high_confidence": false,
+                "frame_id": 120,
+                "face_id": 0,
+                "timestamp": "2025-10-15T22:56:54.592501"
+              }
+            ],
+            "emocion_principal": {
+              "emotion": "sad",
+              "emotion_es": "Triste",
+              "confidence": 0.29463793369981733,
+              "high_confidence": false,
+              "frame_id": 120,
+              "face_id": 0,
+              "timestamp": "2025-10-15T22:56:54.592484"
+            },
+            "num_emociones_detectadas": 6,
+            "frame_id": 120,
+            "face_id": 0,
+            "timestamp": "2025-10-15T22:56:54.592504",
+            "image_size": [
+              53,
+              53
+            ],
+            "distribucion_completa": {
+              "Angry": 0.21564629025137103,
+              "Disgust": 0.021048130125142565,
+              "Fear": 0.08263967232659461,
+              "Happy": 0.22583874529779657,
+              "Sad": 0.29463793369981733,
+              "Surprise": 0.08609175655042729,
+              "Neutral": 0.0740974717488508
+            },
+            "bbox": [
+              "423",
+              "126",
+              "45",
+              "45"
+            ],
+            "area": "2025"
+          },
+          {
+            "emociones": [
+              {
+                "emotion": "happy",
+                "emotion_es": "Feliz",
+                "confidence": 0.470717058592574,
+                "high_confidence": false,
+                "frame_id": 120,
+                "face_id": 1,
+                "timestamp": "2025-10-15T22:56:54.809794"
+              },
+              {
+                "emotion": "sad",
+                "emotion_es": "Triste",
+                "confidence": 0.13066571844826724,
+                "high_confidence": false,
+                "frame_id": 120,
+                "face_id": 1,
+                "timestamp": "2025-10-15T22:56:54.809809"
+              },
+              {
+                "emotion": "fear",
+                "emotion_es": "Temeroso",
+                "confidence": 0.12651576214553661,
+                "high_confidence": false,
+                "frame_id": 120,
+                "face_id": 1,
+                "timestamp": "2025-10-15T22:56:54.809815"
+              },
+              {
+                "emotion": "surprise",
+                "emotion_es": "Sorprendido",
+                "confidence": 0.11007623955673472,
+                "high_confidence": false,
+                "frame_id": 120,
+                "face_id": 1,
+                "timestamp": "2025-10-15T22:56:54.809821"
+              },
+              {
+                "emotion": "angry",
+                "emotion_es": "Enojado",
+                "confidence": 0.08760211774788475,
+                "high_confidence": false,
+                "frame_id": 120,
+                "face_id": 1,
+                "timestamp": "2025-10-15T22:56:54.809826"
+              },
+              {
+                "emotion": "neutral",
+                "emotion_es": "Neutro",
+                "confidence": 0.05080086272800859,
+                "high_confidence": false,
+                "frame_id": 120,
+                "face_id": 1,
+                "timestamp": "2025-10-15T22:56:54.809832"
+              }
+            ],
+            "emocion_principal": {
+              "emotion": "happy",
+              "emotion_es": "Feliz",
+              "confidence": 0.470717058592574,
+              "high_confidence": false,
+              "frame_id": 120,
+              "face_id": 1,
+              "timestamp": "2025-10-15T22:56:54.809794"
+            },
+            "num_emociones_detectadas": 6,
+            "frame_id": 120,
+            "face_id": 1,
+            "timestamp": "2025-10-15T22:56:54.809840",
+            "image_size": [
+              184,
+              184
+            ],
+            "distribucion_completa": {
+              "Angry": 0.08760211774788475,
+              "Disgust": 0.02362224078099429,
+              "Fear": 0.12651576214553661,
+              "Happy": 0.470717058592574,
+              "Sad": 0.13066571844826724,
+              "Surprise": 0.11007623955673472,
+              "Neutral": 0.05080086272800859
+            },
+            "bbox": [
+              "109",
+              "310",
+              "154",
+              "154"
+            ],
+            "area": "23716"
+          }
+        ],
+        "frame_path": "./resultados\\fotogramas_detectados\\sesion_20251015_225649\\frames\\frame_000120_20251015_225654_306.jpg",
+        "total_emociones_detectadas": 12
+      },
+      {
+        "frame_id": 210,
+        "timestamp": "20251015_225655_102",
+        "tiempo_video": 6.998990697674419,
+        "num_faces": 1,
+        "emociones": [
+          {
+            "emotion": "happy",
+            "emotion_es": "Feliz",
+            "confidence": 0.3653380010968655,
+            "high_confidence": false,
+            "frame_id": 210,
+            "face_id": 0,
+            "timestamp": "2025-10-15T22:56:55.392292",
+            "rostro_id": 0,
+            "bbox": [
+              "185",
+              "313",
+              "171",
+              "171"
+            ]
+          },
+          {
+            "emotion": "sad",
+            "emotion_es": "Triste",
+            "confidence": 0.24926310998641388,
+            "high_confidence": false,
+            "frame_id": 210,
+            "face_id": 0,
+            "timestamp": "2025-10-15T22:56:55.392305",
+            "rostro_id": 0,
+            "bbox": [
+              "185",
+              "313",
+              "171",
+              "171"
+            ]
+          },
+          {
+            "emotion": "neutral",
+            "emotion_es": "Neutro",
+            "confidence": 0.12262498891626432,
+            "high_confidence": false,
+            "frame_id": 210,
+            "face_id": 0,
+            "timestamp": "2025-10-15T22:56:55.392311",
+            "rostro_id": 0,
+            "bbox": [
+              "185",
+              "313",
+              "171",
+              "171"
+            ]
+          },
+          {
+            "emotion": "surprise",
+            "emotion_es": "Sorprendido",
+            "confidence": 0.08964922045563875,
+            "high_confidence": false,
+            "frame_id": 210,
+            "face_id": 0,
+            "timestamp": "2025-10-15T22:56:55.392315",
+            "rostro_id": 0,
+            "bbox": [
+              "185",
+              "313",
+              "171",
+              "171"
+            ]
+          },
+          {
+            "emotion": "fear",
+            "emotion_es": "Temeroso",
+            "confidence": 0.0746091499782805,
+            "high_confidence": false,
+            "frame_id": 210,
+            "face_id": 0,
+            "timestamp": "2025-10-15T22:56:55.392319",
+            "rostro_id": 0,
+            "bbox": [
+              "185",
+              "313",
+              "171",
+              "171"
+            ]
+          },
+          {
+            "emotion": "angry",
+            "emotion_es": "Enojado",
+            "confidence": 0.0732715353921605,
+            "high_confidence": false,
+            "frame_id": 210,
+            "face_id": 0,
+            "timestamp": "2025-10-15T22:56:55.392323",
+            "rostro_id": 0,
+            "bbox": [
+              "185",
+              "313",
+              "171",
+              "171"
+            ]
+          }
+        ],
+        "rostros": [
+          {
+            "emociones": [
+              {
+                "emotion": "happy",
+                "emotion_es": "Feliz",
+                "confidence": 0.3653380010968655,
+                "high_confidence": false,
+                "frame_id": 210,
+                "face_id": 0,
+                "timestamp": "2025-10-15T22:56:55.392292"
+              },
+              {
+                "emotion": "sad",
+                "emotion_es": "Triste",
+                "confidence": 0.24926310998641388,
+                "high_confidence": false,
+                "frame_id": 210,
+                "face_id": 0,
+                "timestamp": "2025-10-15T22:56:55.392305"
+              },
+              {
+                "emotion": "neutral",
+                "emotion_es": "Neutro",
+                "confidence": 0.12262498891626432,
+                "high_confidence": false,
+                "frame_id": 210,
+                "face_id": 0,
+                "timestamp": "2025-10-15T22:56:55.392311"
+              },
+              {
+                "emotion": "surprise",
+                "emotion_es": "Sorprendido",
+                "confidence": 0.08964922045563875,
+                "high_confidence": false,
+                "frame_id": 210,
+                "face_id": 0,
+                "timestamp": "2025-10-15T22:56:55.392315"
+              },
+              {
+                "emotion": "fear",
+                "emotion_es": "Temeroso",
+                "confidence": 0.0746091499782805,
+                "high_confidence": false,
+                "frame_id": 210,
+                "face_id": 0,
+                "timestamp": "2025-10-15T22:56:55.392319"
+              },
+              {
+                "emotion": "angry",
+                "emotion_es": "Enojado",
+                "confidence": 0.0732715353921605,
+                "high_confidence": false,
+                "frame_id": 210,
+                "face_id": 0,
+                "timestamp": "2025-10-15T22:56:55.392323"
+              }
+            ],
+            "emocion_principal": {
+              "emotion": "happy",
+              "emotion_es": "Feliz",
+              "confidence": 0.3653380010968655,
+              "high_confidence": false,
+              "frame_id": 210,
+              "face_id": 0,
+              "timestamp": "2025-10-15T22:56:55.392292"
+            },
+            "num_emociones_detectadas": 6,
+            "frame_id": 210,
+            "face_id": 0,
+            "timestamp": "2025-10-15T22:56:55.392331",
+            "image_size": [
+              205,
+              205
+            ],
+            "distribucion_completa": {
+              "Angry": 0.0732715353921605,
+              "Disgust": 0.025243994174376793,
+              "Fear": 0.0746091499782805,
+              "Happy": 0.3653380010968655,
+              "Sad": 0.24926310998641388,
+              "Surprise": 0.08964922045563875,
+              "Neutral": 0.12262498891626432
+            },
+            "bbox": [
+              "185",
+              "313",
+              "171",
+              "171"
+            ],
+            "area": "29241"
+          }
+        ],
+        "frame_path": "./resultados\\fotogramas_detectados\\sesion_20251015_225649\\frames\\frame_000210_20251015_225655_102.jpg",
+        "total_emociones_detectadas": 6
+      },
+      {
+        "frame_id": 300,
+        "timestamp": "20251015_225655_769",
+        "tiempo_video": 9.998558139534884,
+        "num_faces": 3,
+        "emociones": [
+          {
+            "emotion": "neutral",
+            "emotion_es": "Neutro",
+            "confidence": 0.45387296516581127,
+            "high_confidence": false,
+            "frame_id": 300,
+            "face_id": 0,
+            "timestamp": "2025-10-15T22:56:56.071107",
+            "rostro_id": 0,
+            "bbox": [
+              "269",
+              "2",
+              "69",
+              "69"
+            ]
+          },
+          {
+            "emotion": "fear",
+            "emotion_es": "Temeroso",
+            "confidence": 0.12036836769202958,
+            "high_confidence": false,
+            "frame_id": 300,
+            "face_id": 0,
+            "timestamp": "2025-10-15T22:56:56.071118",
+            "rostro_id": 0,
+            "bbox": [
+              "269",
+              "2",
+              "69",
+              "69"
+            ]
+          },
+          {
+            "emotion": "surprise",
+            "emotion_es": "Sorprendido",
+            "confidence": 0.11526853288188046,
+            "high_confidence": false,
+            "frame_id": 300,
+            "face_id": 0,
+            "timestamp": "2025-10-15T22:56:56.071121",
+            "rostro_id": 0,
+            "bbox": [
+              "269",
+              "2",
+              "69",
+              "69"
+            ]
+          },
+          {
+            "emotion": "sad",
+            "emotion_es": "Triste",
+            "confidence": 0.10380215438446033,
+            "high_confidence": false,
+            "frame_id": 300,
+            "face_id": 0,
+            "timestamp": "2025-10-15T22:56:56.071123",
+            "rostro_id": 0,
+            "bbox": [
+              "269",
+              "2",
+              "69",
+              "69"
+            ]
+          },
+          {
+            "emotion": "happy",
+            "emotion_es": "Feliz",
+            "confidence": 0.09533610124816591,
+            "high_confidence": false,
+            "frame_id": 300,
+            "face_id": 0,
+            "timestamp": "2025-10-15T22:56:56.071125",
+            "rostro_id": 0,
+            "bbox": [
+              "269",
+              "2",
+              "69",
+              "69"
+            ]
+          },
+          {
+            "emotion": "angry",
+            "emotion_es": "Enojado",
+            "confidence": 0.08502080199356699,
+            "high_confidence": false,
+            "frame_id": 300,
+            "face_id": 0,
+            "timestamp": "2025-10-15T22:56:56.071127",
+            "rostro_id": 0,
+            "bbox": [
+              "269",
+              "2",
+              "69",
+              "69"
+            ]
+          },
+          {
+            "emotion": "happy",
+            "emotion_es": "Feliz",
+            "confidence": 0.3284287514592345,
+            "high_confidence": false,
+            "frame_id": 300,
+            "face_id": 1,
+            "timestamp": "2025-10-15T22:56:56.287197",
+            "rostro_id": 1,
+            "bbox": [
+              "372",
+              "313",
+              "74",
+              "74"
+            ]
+          },
+          {
+            "emotion": "sad",
+            "emotion_es": "Triste",
+            "confidence": 0.22348032781677704,
+            "high_confidence": false,
+            "frame_id": 300,
+            "face_id": 1,
+            "timestamp": "2025-10-15T22:56:56.287204",
+            "rostro_id": 1,
+            "bbox": [
+              "372",
+              "313",
+              "74",
+              "74"
+            ]
+          },
+          {
+            "emotion": "angry",
+            "emotion_es": "Enojado",
+            "confidence": 0.16153498143124087,
+            "high_confidence": false,
+            "frame_id": 300,
+            "face_id": 1,
+            "timestamp": "2025-10-15T22:56:56.287206",
+            "rostro_id": 1,
+            "bbox": [
+              "372",
+              "313",
+              "74",
+              "74"
+            ]
+          },
+          {
+            "emotion": "fear",
+            "emotion_es": "Temeroso",
+            "confidence": 0.10371757527285225,
+            "high_confidence": false,
+            "frame_id": 300,
+            "face_id": 1,
+            "timestamp": "2025-10-15T22:56:56.287208",
+            "rostro_id": 1,
+            "bbox": [
+              "372",
+              "313",
+              "74",
+              "74"
+            ]
+          },
+          {
+            "emotion": "surprise",
+            "emotion_es": "Sorprendido",
+            "confidence": 0.09981010451129178,
+            "high_confidence": false,
+            "frame_id": 300,
+            "face_id": 1,
+            "timestamp": "2025-10-15T22:56:56.287210",
+            "rostro_id": 1,
+            "bbox": [
+              "372",
+              "313",
+              "74",
+              "74"
+            ]
+          },
+          {
+            "emotion": "sad",
+            "emotion_es": "Triste",
+            "confidence": 0.4297251337545681,
+            "high_confidence": false,
+            "frame_id": 300,
+            "face_id": 2,
+            "timestamp": "2025-10-15T22:56:56.502216",
+            "rostro_id": 2,
+            "bbox": [
+              "292",
+              "314",
+              "131",
+              "131"
+            ]
+          },
+          {
+            "emotion": "angry",
+            "emotion_es": "Enojado",
+            "confidence": 0.14523775311189835,
+            "high_confidence": false,
+            "frame_id": 300,
+            "face_id": 2,
+            "timestamp": "2025-10-15T22:56:56.502224",
+            "rostro_id": 2,
+            "bbox": [
+              "292",
+              "314",
+              "131",
+              "131"
+            ]
+          },
+          {
+            "emotion": "happy",
+            "emotion_es": "Feliz",
+            "confidence": 0.11452804383724648,
+            "high_confidence": false,
+            "frame_id": 300,
+            "face_id": 2,
+            "timestamp": "2025-10-15T22:56:56.502226",
+            "rostro_id": 2,
+            "bbox": [
+              "292",
+              "314",
+              "131",
+              "131"
+            ]
+          },
+          {
+            "emotion": "fear",
+            "emotion_es": "Temeroso",
+            "confidence": 0.10402515814689764,
+            "high_confidence": false,
+            "frame_id": 300,
+            "face_id": 2,
+            "timestamp": "2025-10-15T22:56:56.502228",
+            "rostro_id": 2,
+            "bbox": [
+              "292",
+              "314",
+              "131",
+              "131"
+            ]
+          },
+          {
+            "emotion": "surprise",
+            "emotion_es": "Sorprendido",
+            "confidence": 0.10288195795617286,
+            "high_confidence": false,
+            "frame_id": 300,
+            "face_id": 2,
+            "timestamp": "2025-10-15T22:56:56.502230",
+            "rostro_id": 2,
+            "bbox": [
+              "292",
+              "314",
+              "131",
+              "131"
+            ]
+          },
+          {
+            "emotion": "neutral",
+            "emotion_es": "Neutro",
+            "confidence": 0.06793936712286887,
+            "high_confidence": false,
+            "frame_id": 300,
+            "face_id": 2,
+            "timestamp": "2025-10-15T22:56:56.502231",
+            "rostro_id": 2,
+            "bbox": [
+              "292",
+              "314",
+              "131",
+              "131"
+            ]
+          }
+        ],
+        "rostros": [
+          {
+            "emociones": [
+              {
+                "emotion": "neutral",
+                "emotion_es": "Neutro",
+                "confidence": 0.45387296516581127,
+                "high_confidence": false,
+                "frame_id": 300,
+                "face_id": 0,
+                "timestamp": "2025-10-15T22:56:56.071107"
+              },
+              {
+                "emotion": "fear",
+                "emotion_es": "Temeroso",
+                "confidence": 0.12036836769202958,
+                "high_confidence": false,
+                "frame_id": 300,
+                "face_id": 0,
+                "timestamp": "2025-10-15T22:56:56.071118"
+              },
+              {
+                "emotion": "surprise",
+                "emotion_es": "Sorprendido",
+                "confidence": 0.11526853288188046,
+                "high_confidence": false,
+                "frame_id": 300,
+                "face_id": 0,
+                "timestamp": "2025-10-15T22:56:56.071121"
+              },
+              {
+                "emotion": "sad",
+                "emotion_es": "Triste",
+                "confidence": 0.10380215438446033,
+                "high_confidence": false,
+                "frame_id": 300,
+                "face_id": 0,
+                "timestamp": "2025-10-15T22:56:56.071123"
+              },
+              {
+                "emotion": "happy",
+                "emotion_es": "Feliz",
+                "confidence": 0.09533610124816591,
+                "high_confidence": false,
+                "frame_id": 300,
+                "face_id": 0,
+                "timestamp": "2025-10-15T22:56:56.071125"
+              },
+              {
+                "emotion": "angry",
+                "emotion_es": "Enojado",
+                "confidence": 0.08502080199356699,
+                "high_confidence": false,
+                "frame_id": 300,
+                "face_id": 0,
+                "timestamp": "2025-10-15T22:56:56.071127"
+              }
+            ],
+            "emocion_principal": {
+              "emotion": "neutral",
+              "emotion_es": "Neutro",
+              "confidence": 0.45387296516581127,
+              "high_confidence": false,
+              "frame_id": 300,
+              "face_id": 0,
+              "timestamp": "2025-10-15T22:56:56.071107"
+            },
+            "num_emociones_detectadas": 6,
+            "frame_id": 300,
+            "face_id": 0,
+            "timestamp": "2025-10-15T22:56:56.071131",
+            "image_size": [
+              77,
+              81
+            ],
+            "distribucion_completa": {
+              "Angry": 0.08502080199356699,
+              "Disgust": 0.02633107663408535,
+              "Fear": 0.12036836769202958,
+              "Happy": 0.09533610124816591,
+              "Sad": 0.10380215438446033,
+              "Surprise": 0.11526853288188046,
+              "Neutral": 0.45387296516581127
+            },
+            "bbox": [
+              "269",
+              "2",
+              "69",
+              "69"
+            ],
+            "area": "4761"
+          },
+          {
+            "emociones": [
+              {
+                "emotion": "happy",
+                "emotion_es": "Feliz",
+                "confidence": 0.3284287514592345,
+                "high_confidence": false,
+                "frame_id": 300,
+                "face_id": 1,
+                "timestamp": "2025-10-15T22:56:56.287197"
+              },
+              {
+                "emotion": "sad",
+                "emotion_es": "Triste",
+                "confidence": 0.22348032781677704,
+                "high_confidence": false,
+                "frame_id": 300,
+                "face_id": 1,
+                "timestamp": "2025-10-15T22:56:56.287204"
+              },
+              {
+                "emotion": "angry",
+                "emotion_es": "Enojado",
+                "confidence": 0.16153498143124087,
+                "high_confidence": false,
+                "frame_id": 300,
+                "face_id": 1,
+                "timestamp": "2025-10-15T22:56:56.287206"
+              },
+              {
+                "emotion": "fear",
+                "emotion_es": "Temeroso",
+                "confidence": 0.10371757527285225,
+                "high_confidence": false,
+                "frame_id": 300,
+                "face_id": 1,
+                "timestamp": "2025-10-15T22:56:56.287208"
+              },
+              {
+                "emotion": "surprise",
+                "emotion_es": "Sorprendido",
+                "confidence": 0.09981010451129178,
+                "high_confidence": false,
+                "frame_id": 300,
+                "face_id": 1,
+                "timestamp": "2025-10-15T22:56:56.287210"
+              }
+            ],
+            "emocion_principal": {
+              "emotion": "happy",
+              "emotion_es": "Feliz",
+              "confidence": 0.3284287514592345,
+              "high_confidence": false,
+              "frame_id": 300,
+              "face_id": 1,
+              "timestamp": "2025-10-15T22:56:56.287197"
+            },
+            "num_emociones_detectadas": 5,
+            "frame_id": 300,
+            "face_id": 1,
+            "timestamp": "2025-10-15T22:56:56.287228",
+            "image_size": [
+              88,
+              88
+            ],
+            "distribucion_completa": {
+              "Angry": 0.16153498143124087,
+              "Disgust": 0.04445097353373198,
+              "Fear": 0.10371757527285225,
+              "Happy": 0.3284287514592345,
+              "Sad": 0.22348032781677704,
+              "Surprise": 0.09981010451129178,
+              "Neutral": 0.038577285974871776
+            },
+            "bbox": [
+              "372",
+              "313",
+              "74",
+              "74"
+            ],
+            "area": "5476"
+          },
+          {
+            "emociones": [
+              {
+                "emotion": "sad",
+                "emotion_es": "Triste",
+                "confidence": 0.4297251337545681,
+                "high_confidence": false,
+                "frame_id": 300,
+                "face_id": 2,
+                "timestamp": "2025-10-15T22:56:56.502216"
+              },
+              {
+                "emotion": "angry",
+                "emotion_es": "Enojado",
+                "confidence": 0.14523775311189835,
+                "high_confidence": false,
+                "frame_id": 300,
+                "face_id": 2,
+                "timestamp": "2025-10-15T22:56:56.502224"
+              },
+              {
+                "emotion": "happy",
+                "emotion_es": "Feliz",
+                "confidence": 0.11452804383724648,
+                "high_confidence": false,
+                "frame_id": 300,
+                "face_id": 2,
+                "timestamp": "2025-10-15T22:56:56.502226"
+              },
+              {
+                "emotion": "fear",
+                "emotion_es": "Temeroso",
+                "confidence": 0.10402515814689764,
+                "high_confidence": false,
+                "frame_id": 300,
+                "face_id": 2,
+                "timestamp": "2025-10-15T22:56:56.502228"
+              },
+              {
+                "emotion": "surprise",
+                "emotion_es": "Sorprendido",
+                "confidence": 0.10288195795617286,
+                "high_confidence": false,
+                "frame_id": 300,
+                "face_id": 2,
+                "timestamp": "2025-10-15T22:56:56.502230"
+              },
+              {
+                "emotion": "neutral",
+                "emotion_es": "Neutro",
+                "confidence": 0.06793936712286887,
+                "high_confidence": false,
+                "frame_id": 300,
+                "face_id": 2,
+                "timestamp": "2025-10-15T22:56:56.502231"
+              }
+            ],
+            "emocion_principal": {
+              "emotion": "sad",
+              "emotion_es": "Triste",
+              "confidence": 0.4297251337545681,
+              "high_confidence": false,
+              "frame_id": 300,
+              "face_id": 2,
+              "timestamp": "2025-10-15T22:56:56.502216"
+            },
+            "num_emociones_detectadas": 6,
+            "frame_id": 300,
+            "face_id": 2,
+            "timestamp": "2025-10-15T22:56:56.502235",
+            "image_size": [
+              157,
+              157
+            ],
+            "distribucion_completa": {
+              "Angry": 0.14523775311189835,
+              "Disgust": 0.03566258607034793,
+              "Fear": 0.10402515814689764,
+              "Happy": 0.11452804383724648,
+              "Sad": 0.4297251337545681,
+              "Surprise": 0.10288195795617286,
+              "Neutral": 0.06793936712286887
+            },
+            "bbox": [
+              "292",
+              "314",
+              "131",
+              "131"
+            ],
+            "area": "17161"
+          }
+        ],
+        "frame_path": "./resultados\\fotogramas_detectados\\sesion_20251015_225649\\frames\\frame_000300_20251015_225655_769.jpg",
+        "total_emociones_detectadas": 17
+      },
+      {
+        "frame_id": 330,
+        "timestamp": "20251015_225656_554",
+        "tiempo_video": 10.998413953488372,
+        "num_faces": 2,
+        "emociones": [
+          {
+            "emotion": "neutral",
+            "emotion_es": "Neutro",
+            "confidence": 0.48278584544938374,
+            "high_confidence": false,
+            "frame_id": 330,
+            "face_id": 0,
+            "timestamp": "2025-10-15T22:56:56.850229",
+            "rostro_id": 0,
+            "bbox": [
+              "47",
+              "4",
+              "63",
+              "63"
+            ]
+          },
+          {
+            "emotion": "sad",
+            "emotion_es": "Triste",
+            "confidence": 0.18001474481218552,
+            "high_confidence": false,
+            "frame_id": 330,
+            "face_id": 0,
+            "timestamp": "2025-10-15T22:56:56.850237",
+            "rostro_id": 0,
+            "bbox": [
+              "47",
+              "4",
+              "63",
+              "63"
+            ]
+          },
+          {
+            "emotion": "surprise",
+            "emotion_es": "Sorprendido",
+            "confidence": 0.09191293012141019,
+            "high_confidence": false,
+            "frame_id": 330,
+            "face_id": 0,
+            "timestamp": "2025-10-15T22:56:56.850239",
+            "rostro_id": 0,
+            "bbox": [
+              "47",
+              "4",
+              "63",
+              "63"
+            ]
+          },
+          {
+            "emotion": "fear",
+            "emotion_es": "Temeroso",
+            "confidence": 0.08192768556555016,
+            "high_confidence": false,
+            "frame_id": 330,
+            "face_id": 0,
+            "timestamp": "2025-10-15T22:56:56.850241",
+            "rostro_id": 0,
+            "bbox": [
+              "47",
+              "4",
+              "63",
+              "63"
+            ]
+          },
+          {
+            "emotion": "happy",
+            "emotion_es": "Feliz",
+            "confidence": 0.07585627677405267,
+            "high_confidence": false,
+            "frame_id": 330,
+            "face_id": 0,
+            "timestamp": "2025-10-15T22:56:56.850244",
+            "rostro_id": 0,
+            "bbox": [
+              "47",
+              "4",
+              "63",
+              "63"
+            ]
+          },
+          {
+            "emotion": "angry",
+            "emotion_es": "Enojado",
+            "confidence": 0.06034096992094353,
+            "high_confidence": false,
+            "frame_id": 330,
+            "face_id": 0,
+            "timestamp": "2025-10-15T22:56:56.850245",
+            "rostro_id": 0,
+            "bbox": [
+              "47",
+              "4",
+              "63",
+              "63"
+            ]
+          },
+          {
+            "emotion": "sad",
+            "emotion_es": "Triste",
+            "confidence": 0.4354883364156394,
+            "high_confidence": false,
+            "frame_id": 330,
+            "face_id": 1,
+            "timestamp": "2025-10-15T22:56:57.064001",
+            "rostro_id": 1,
+            "bbox": [
+              "210",
+              "112",
+              "58",
+              "58"
+            ]
+          },
+          {
+            "emotion": "angry",
+            "emotion_es": "Enojado",
+            "confidence": 0.18565723740914963,
+            "high_confidence": false,
+            "frame_id": 330,
+            "face_id": 1,
+            "timestamp": "2025-10-15T22:56:57.064009",
+            "rostro_id": 1,
+            "bbox": [
+              "210",
+              "112",
+              "58",
+              "58"
+            ]
+          },
+          {
+            "emotion": "happy",
+            "emotion_es": "Feliz",
+            "confidence": 0.11456610995419651,
+            "high_confidence": false,
+            "frame_id": 330,
+            "face_id": 1,
+            "timestamp": "2025-10-15T22:56:57.064012",
+            "rostro_id": 1,
+            "bbox": [
+              "210",
+              "112",
+              "58",
+              "58"
+            ]
+          },
+          {
+            "emotion": "fear",
+            "emotion_es": "Temeroso",
+            "confidence": 0.10963721558091533,
+            "high_confidence": false,
+            "frame_id": 330,
+            "face_id": 1,
+            "timestamp": "2025-10-15T22:56:57.064014",
+            "rostro_id": 1,
+            "bbox": [
+              "210",
+              "112",
+              "58",
+              "58"
+            ]
+          },
+          {
+            "emotion": "surprise",
+            "emotion_es": "Sorprendido",
+            "confidence": 0.08857195355061957,
+            "high_confidence": false,
+            "frame_id": 330,
+            "face_id": 1,
+            "timestamp": "2025-10-15T22:56:57.064016",
+            "rostro_id": 1,
+            "bbox": [
+              "210",
+              "112",
+              "58",
+              "58"
+            ]
+          }
+        ],
+        "rostros": [
+          {
+            "emociones": [
+              {
+                "emotion": "neutral",
+                "emotion_es": "Neutro",
+                "confidence": 0.48278584544938374,
+                "high_confidence": false,
+                "frame_id": 330,
+                "face_id": 0,
+                "timestamp": "2025-10-15T22:56:56.850229"
+              },
+              {
+                "emotion": "sad",
+                "emotion_es": "Triste",
+                "confidence": 0.18001474481218552,
+                "high_confidence": false,
+                "frame_id": 330,
+                "face_id": 0,
+                "timestamp": "2025-10-15T22:56:56.850237"
+              },
+              {
+                "emotion": "surprise",
+                "emotion_es": "Sorprendido",
+                "confidence": 0.09191293012141019,
+                "high_confidence": false,
+                "frame_id": 330,
+                "face_id": 0,
+                "timestamp": "2025-10-15T22:56:56.850239"
+              },
+              {
+                "emotion": "fear",
+                "emotion_es": "Temeroso",
+                "confidence": 0.08192768556555016,
+                "high_confidence": false,
+                "frame_id": 330,
+                "face_id": 0,
+                "timestamp": "2025-10-15T22:56:56.850241"
+              },
+              {
+                "emotion": "happy",
+                "emotion_es": "Feliz",
+                "confidence": 0.07585627677405267,
+                "high_confidence": false,
+                "frame_id": 330,
+                "face_id": 0,
+                "timestamp": "2025-10-15T22:56:56.850244"
+              },
+              {
+                "emotion": "angry",
+                "emotion_es": "Enojado",
+                "confidence": 0.06034096992094353,
+                "high_confidence": false,
+                "frame_id": 330,
+                "face_id": 0,
+                "timestamp": "2025-10-15T22:56:56.850245"
+              }
+            ],
+            "emocion_principal": {
+              "emotion": "neutral",
+              "emotion_es": "Neutro",
+              "confidence": 0.48278584544938374,
+              "high_confidence": false,
+              "frame_id": 330,
+              "face_id": 0,
+              "timestamp": "2025-10-15T22:56:56.850229"
+            },
+            "num_emociones_detectadas": 6,
+            "frame_id": 330,
+            "face_id": 0,
+            "timestamp": "2025-10-15T22:56:56.850249",
+            "image_size": [
+              73,
+              75
+            ],
+            "distribucion_completa": {
+              "Angry": 0.06034096992094353,
+              "Disgust": 0.027161547356474247,
+              "Fear": 0.08192768556555016,
+              "Happy": 0.07585627677405267,
+              "Sad": 0.18001474481218552,
+              "Surprise": 0.09191293012141019,
+              "Neutral": 0.48278584544938374
+            },
+            "bbox": [
+              "47",
+              "4",
+              "63",
+              "63"
+            ],
+            "area": "3969"
+          },
+          {
+            "emociones": [
+              {
+                "emotion": "sad",
+                "emotion_es": "Triste",
+                "confidence": 0.4354883364156394,
+                "high_confidence": false,
+                "frame_id": 330,
+                "face_id": 1,
+                "timestamp": "2025-10-15T22:56:57.064001"
+              },
+              {
+                "emotion": "angry",
+                "emotion_es": "Enojado",
+                "confidence": 0.18565723740914963,
+                "high_confidence": false,
+                "frame_id": 330,
+                "face_id": 1,
+                "timestamp": "2025-10-15T22:56:57.064009"
+              },
+              {
+                "emotion": "happy",
+                "emotion_es": "Feliz",
+                "confidence": 0.11456610995419651,
+                "high_confidence": false,
+                "frame_id": 330,
+                "face_id": 1,
+                "timestamp": "2025-10-15T22:56:57.064012"
+              },
+              {
+                "emotion": "fear",
+                "emotion_es": "Temeroso",
+                "confidence": 0.10963721558091533,
+                "high_confidence": false,
+                "frame_id": 330,
+                "face_id": 1,
+                "timestamp": "2025-10-15T22:56:57.064014"
+              },
+              {
+                "emotion": "surprise",
+                "emotion_es": "Sorprendido",
+                "confidence": 0.08857195355061957,
+                "high_confidence": false,
+                "frame_id": 330,
+                "face_id": 1,
+                "timestamp": "2025-10-15T22:56:57.064016"
+              }
+            ],
+            "emocion_principal": {
+              "emotion": "sad",
+              "emotion_es": "Triste",
+              "confidence": 0.4354883364156394,
+              "high_confidence": false,
+              "frame_id": 330,
+              "face_id": 1,
+              "timestamp": "2025-10-15T22:56:57.064001"
+            },
+            "num_emociones_detectadas": 5,
+            "frame_id": 330,
+            "face_id": 1,
+            "timestamp": "2025-10-15T22:56:57.064020",
+            "image_size": [
+              68,
+              68
+            ],
+            "distribucion_completa": {
+              "Angry": 0.18565723740914963,
+              "Disgust": 0.02048970758277219,
+              "Fear": 0.10963721558091533,
+              "Happy": 0.11456610995419651,
+              "Sad": 0.4354883364156394,
+              "Surprise": 0.08857195355061957,
+              "Neutral": 0.0455894395067076
+            },
+            "bbox": [
+              "210",
+              "112",
+              "58",
+              "58"
+            ],
+            "area": "3364"
+          }
+        ],
+        "frame_path": "./resultados\\fotogramas_detectados\\sesion_20251015_225649\\frames\\frame_000330_20251015_225656_554.jpg",
+        "total_emociones_detectadas": 11
+      },
+      {
+        "frame_id": 360,
+        "timestamp": "20251015_225657_116",
+        "tiempo_video": 11.99826976744186,
+        "num_faces": 1,
+        "emociones": [
+          {
+            "emotion": "sad",
+            "emotion_es": "Triste",
+            "confidence": 0.4236137713334643,
+            "high_confidence": false,
+            "frame_id": 360,
+            "face_id": 0,
+            "timestamp": "2025-10-15T22:56:57.402049",
+            "rostro_id": 0,
+            "bbox": [
+              "134",
+              "284",
+              "187",
+              "187"
+            ]
+          },
+          {
+            "emotion": "fear",
+            "emotion_es": "Temeroso",
+            "confidence": 0.24588339542322468,
+            "high_confidence": false,
+            "frame_id": 360,
+            "face_id": 0,
+            "timestamp": "2025-10-15T22:56:57.402058",
+            "rostro_id": 0,
+            "bbox": [
+              "134",
+              "284",
+              "187",
+              "187"
+            ]
+          },
+          {
+            "emotion": "angry",
+            "emotion_es": "Enojado",
+            "confidence": 0.15668692418804103,
+            "high_confidence": false,
+            "frame_id": 360,
+            "face_id": 0,
+            "timestamp": "2025-10-15T22:56:57.402061",
+            "rostro_id": 0,
+            "bbox": [
+              "134",
+              "284",
+              "187",
+              "187"
+            ]
+          },
+          {
+            "emotion": "surprise",
+            "emotion_es": "Sorprendido",
+            "confidence": 0.08702385777929658,
+            "high_confidence": false,
+            "frame_id": 360,
+            "face_id": 0,
+            "timestamp": "2025-10-15T22:56:57.402063",
+            "rostro_id": 0,
+            "bbox": [
+              "134",
+              "284",
+              "187",
+              "187"
+            ]
+          }
+        ],
+        "rostros": [
+          {
+            "emociones": [
+              {
+                "emotion": "sad",
+                "emotion_es": "Triste",
+                "confidence": 0.4236137713334643,
+                "high_confidence": false,
+                "frame_id": 360,
+                "face_id": 0,
+                "timestamp": "2025-10-15T22:56:57.402049"
+              },
+              {
+                "emotion": "fear",
+                "emotion_es": "Temeroso",
+                "confidence": 0.24588339542322468,
+                "high_confidence": false,
+                "frame_id": 360,
+                "face_id": 0,
+                "timestamp": "2025-10-15T22:56:57.402058"
+              },
+              {
+                "emotion": "angry",
+                "emotion_es": "Enojado",
+                "confidence": 0.15668692418804103,
+                "high_confidence": false,
+                "frame_id": 360,
+                "face_id": 0,
+                "timestamp": "2025-10-15T22:56:57.402061"
+              },
+              {
+                "emotion": "surprise",
+                "emotion_es": "Sorprendido",
+                "confidence": 0.08702385777929658,
+                "high_confidence": false,
+                "frame_id": 360,
+                "face_id": 0,
+                "timestamp": "2025-10-15T22:56:57.402063"
+              }
+            ],
+            "emocion_principal": {
+              "emotion": "sad",
+              "emotion_es": "Triste",
+              "confidence": 0.4236137713334643,
+              "high_confidence": false,
+              "frame_id": 360,
+              "face_id": 0,
+              "timestamp": "2025-10-15T22:56:57.402049"
+            },
+            "num_emociones_detectadas": 4,
+            "frame_id": 360,
+            "face_id": 0,
+            "timestamp": "2025-10-15T22:56:57.402067",
+            "image_size": [
+              223,
+              223
+            ],
+            "distribucion_completa": {
+              "Angry": 0.15668692418804103,
+              "Disgust": 0.037355939984875006,
+              "Fear": 0.24588339542322468,
+              "Happy": 0.022795461919266787,
+              "Sad": 0.4236137713334643,
+              "Surprise": 0.08702385777929658,
+              "Neutral": 0.026640649371831807
+            },
+            "bbox": [
+              "134",
+              "284",
+              "187",
+              "187"
+            ],
+            "area": "34969"
+          }
+        ],
+        "frame_path": "./resultados\\fotogramas_detectados\\sesion_20251015_225649\\frames\\frame_000360_20251015_225657_116.jpg",
+        "total_emociones_detectadas": 4
+      },
+      {
+        "frame_id": 390,
+        "timestamp": "20251015_225657_459",
+        "tiempo_video": 12.99812558139535,
+        "num_faces": 1,
+        "emociones": [
+          {
+            "emotion": "sad",
+            "emotion_es": "Triste",
+            "confidence": 0.47756360140697546,
+            "high_confidence": false,
+            "frame_id": 390,
+            "face_id": 0,
+            "timestamp": "2025-10-15T22:56:57.770967",
+            "rostro_id": 0,
+            "bbox": [
+              "176",
+              "302",
+              "138",
+              "138"
+            ]
+          },
+          {
+            "emotion": "angry",
+            "emotion_es": "Enojado",
+            "confidence": 0.22535234697070983,
+            "high_confidence": false,
+            "frame_id": 390,
+            "face_id": 0,
+            "timestamp": "2025-10-15T22:56:57.770975",
+            "rostro_id": 0,
+            "bbox": [
+              "176",
+              "302",
+              "138",
+              "138"
+            ]
+          },
+          {
+            "emotion": "fear",
+            "emotion_es": "Temeroso",
+            "confidence": 0.12981981718307542,
+            "high_confidence": false,
+            "frame_id": 390,
+            "face_id": 0,
+            "timestamp": "2025-10-15T22:56:57.770977",
+            "rostro_id": 0,
+            "bbox": [
+              "176",
+              "302",
+              "138",
+              "138"
+            ]
+          },
+          {
+            "emotion": "surprise",
+            "emotion_es": "Sorprendido",
+            "confidence": 0.06768456286227889,
+            "high_confidence": false,
+            "frame_id": 390,
+            "face_id": 0,
+            "timestamp": "2025-10-15T22:56:57.770979",
+            "rostro_id": 0,
+            "bbox": [
+              "176",
+              "302",
+              "138",
+              "138"
+            ]
+          }
+        ],
+        "rostros": [
+          {
+            "emociones": [
+              {
+                "emotion": "sad",
+                "emotion_es": "Triste",
+                "confidence": 0.47756360140697546,
+                "high_confidence": false,
+                "frame_id": 390,
+                "face_id": 0,
+                "timestamp": "2025-10-15T22:56:57.770967"
+              },
+              {
+                "emotion": "angry",
+                "emotion_es": "Enojado",
+                "confidence": 0.22535234697070983,
+                "high_confidence": false,
+                "frame_id": 390,
+                "face_id": 0,
+                "timestamp": "2025-10-15T22:56:57.770975"
+              },
+              {
+                "emotion": "fear",
+                "emotion_es": "Temeroso",
+                "confidence": 0.12981981718307542,
+                "high_confidence": false,
+                "frame_id": 390,
+                "face_id": 0,
+                "timestamp": "2025-10-15T22:56:57.770977"
+              },
+              {
+                "emotion": "surprise",
+                "emotion_es": "Sorprendido",
+                "confidence": 0.06768456286227889,
+                "high_confidence": false,
+                "frame_id": 390,
+                "face_id": 0,
+                "timestamp": "2025-10-15T22:56:57.770979"
+              }
+            ],
+            "emocion_principal": {
+              "emotion": "sad",
+              "emotion_es": "Triste",
+              "confidence": 0.47756360140697546,
+              "high_confidence": false,
+              "frame_id": 390,
+              "face_id": 0,
+              "timestamp": "2025-10-15T22:56:57.770967"
+            },
+            "num_emociones_detectadas": 4,
+            "frame_id": 390,
+            "face_id": 0,
+            "timestamp": "2025-10-15T22:56:57.770984",
+            "image_size": [
+              164,
+              164
+            ],
+            "distribucion_completa": {
+              "Angry": 0.22535234697070983,
+              "Disgust": 0.049196536182452406,
+              "Fear": 0.12981981718307542,
+              "Happy": 0.022790816089686132,
+              "Sad": 0.47756360140697546,
+              "Surprise": 0.06768456286227889,
+              "Neutral": 0.02759231930482203
+            },
+            "bbox": [
+              "176",
+              "302",
+              "138",
+              "138"
+            ],
+            "area": "19044"
+          }
+        ],
+        "frame_path": "./resultados\\fotogramas_detectados\\sesion_20251015_225649\\frames\\frame_000390_20251015_225657_459.jpg",
+        "total_emociones_detectadas": 4
+      },
+      {
+        "frame_id": 420,
+        "timestamp": "20251015_225657_829",
+        "tiempo_video": 13.997981395348837,
+        "num_faces": 1,
+        "emociones": [
+          {
+            "emotion": "sad",
+            "emotion_es": "Triste",
+            "confidence": 0.5299932778526706,
+            "high_confidence": false,
+            "frame_id": 420,
+            "face_id": 0,
+            "timestamp": "2025-10-15T22:56:58.132024",
+            "rostro_id": 0,
+            "bbox": [
+              "139",
+              "349",
+              "106",
+              "106"
+            ]
+          },
+          {
+            "emotion": "fear",
+            "emotion_es": "Temeroso",
+            "confidence": 0.15761170264202778,
+            "high_confidence": false,
+            "frame_id": 420,
+            "face_id": 0,
+            "timestamp": "2025-10-15T22:56:58.132032",
+            "rostro_id": 0,
+            "bbox": [
+              "139",
+              "349",
+              "106",
+              "106"
+            ]
+          },
+          {
+            "emotion": "surprise",
+            "emotion_es": "Sorprendido",
+            "confidence": 0.11955999348529456,
+            "high_confidence": false,
+            "frame_id": 420,
+            "face_id": 0,
+            "timestamp": "2025-10-15T22:56:58.132035",
+            "rostro_id": 0,
+            "bbox": [
+              "139",
+              "349",
+              "106",
+              "106"
+            ]
+          },
+          {
+            "emotion": "angry",
+            "emotion_es": "Enojado",
+            "confidence": 0.09104933417459495,
+            "high_confidence": false,
+            "frame_id": 420,
+            "face_id": 0,
+            "timestamp": "2025-10-15T22:56:58.132037",
+            "rostro_id": 0,
+            "bbox": [
+              "139",
+              "349",
+              "106",
+              "106"
+            ]
+          },
+          {
+            "emotion": "neutral",
+            "emotion_es": "Neutro",
+            "confidence": 0.05309578472993149,
+            "high_confidence": false,
+            "frame_id": 420,
+            "face_id": 0,
+            "timestamp": "2025-10-15T22:56:58.132038",
+            "rostro_id": 0,
+            "bbox": [
+              "139",
+              "349",
+              "106",
+              "106"
+            ]
+          }
+        ],
+        "rostros": [
+          {
+            "emociones": [
+              {
+                "emotion": "sad",
+                "emotion_es": "Triste",
+                "confidence": 0.5299932778526706,
+                "high_confidence": false,
+                "frame_id": 420,
+                "face_id": 0,
+                "timestamp": "2025-10-15T22:56:58.132024"
+              },
+              {
+                "emotion": "fear",
+                "emotion_es": "Temeroso",
+                "confidence": 0.15761170264202778,
+                "high_confidence": false,
+                "frame_id": 420,
+                "face_id": 0,
+                "timestamp": "2025-10-15T22:56:58.132032"
+              },
+              {
+                "emotion": "surprise",
+                "emotion_es": "Sorprendido",
+                "confidence": 0.11955999348529456,
+                "high_confidence": false,
+                "frame_id": 420,
+                "face_id": 0,
+                "timestamp": "2025-10-15T22:56:58.132035"
+              },
+              {
+                "emotion": "angry",
+                "emotion_es": "Enojado",
+                "confidence": 0.09104933417459495,
+                "high_confidence": false,
+                "frame_id": 420,
+                "face_id": 0,
+                "timestamp": "2025-10-15T22:56:58.132037"
+              },
+              {
+                "emotion": "neutral",
+                "emotion_es": "Neutro",
+                "confidence": 0.05309578472993149,
+                "high_confidence": false,
+                "frame_id": 420,
+                "face_id": 0,
+                "timestamp": "2025-10-15T22:56:58.132038"
+              }
+            ],
+            "emocion_principal": {
+              "emotion": "sad",
+              "emotion_es": "Triste",
+              "confidence": 0.5299932778526706,
+              "high_confidence": false,
+              "frame_id": 420,
+              "face_id": 0,
+              "timestamp": "2025-10-15T22:56:58.132024"
+            },
+            "num_emociones_detectadas": 5,
+            "frame_id": 420,
+            "face_id": 0,
+            "timestamp": "2025-10-15T22:56:58.132042",
+            "image_size": [
+              126,
+              126
+            ],
+            "distribucion_completa": {
+              "Angry": 0.09104933417459495,
+              "Disgust": 0.02607870572685081,
+              "Fear": 0.15761170264202778,
+              "Happy": 0.02261120138863003,
+              "Sad": 0.5299932778526706,
+              "Surprise": 0.11955999348529456,
+              "Neutral": 0.05309578472993149
+            },
+            "bbox": [
+              "139",
+              "349",
+              "106",
+              "106"
+            ],
+            "area": "11236"
+          }
+        ],
+        "frame_path": "./resultados\\fotogramas_detectados\\sesion_20251015_225649\\frames\\frame_000420_20251015_225657_829.jpg",
+        "total_emociones_detectadas": 5
+      }
+    ],
+    "estadisticas_emociones": {
+      "frames_analizados": 9,
+      "total_detecciones": 71,
+      "distribucion_emociones": {
+        "neutral": 9,
+        "sad": 13,
+        "happy": 10,
+        "fear": 13,
+        "surprise": 13,
+        "angry": 13
+      }
+    },
+    "audio": {
+      "transcription": "misión menor la canción",
+      "palabras_detectadas": [
+        "misión",
+        "menor",
+        "la",
+        "canción"
+      ],
+      "palabras_totales": 4,
+      "intentos_comunicacion": 4,
+      "palabras_infantiles": [
+        "misión",
+        "menor"
+      ],
+      "longitud_promedio_palabra": 5.0,
+      "calidad_comunicacion": "comunicacion_basica",
+      "confidence": "alta",
+      "success": true,
+      "info_extraccion": {
+        "ruta_audio": "./audio_extraido\\audio_extraido_20251015_225658.wav",
+        "duracion_segundos": 14.272,
+        "volumen_promedio_db": -28.71090934585994,
+        "frecuencia_muestreo": 16000,
+        "canales": 1,
+        "timestamp": "20251015_225658",
+        "success": true
+      },
+      "analisis_segmentos": [
+        {
+          "transcription": "misión menor la canción",
+          "palabras_detectadas": [
+            "misión",
+            "menor",
+            "la",
+            "canción"
+          ],
+          "palabras_totales": 4,
+          "intentos_comunicacion": 4,
+          "palabras_infantiles": [
+            "misión",
+            "menor"
+          ],
+          "longitud_promedio_palabra": 5.0,
+          "calidad_comunicacion": "comunicacion_basica",
+          "confidence": "alta",
+          "success": true,
+          "tiempo_inicio": 0,
+          "tiempo_fin": 5,
+          "volumen_segmento": -31.458916575832742
+        },
+        {
+          "transcription": "",
+          "palabras_detectadas": [],
+          "palabras_totales": 0,
+          "intentos_comunicacion": 0,
+          "palabras_infantiles": [],
+          "longitud_promedio_palabra": 0,
+          "calidad_comunicacion": "sin_deteccion",
+          "confidence": "nula",
+          "success": true,
+          "nota": "Audio no reconocible - puede indicar comunicación no verbal",
+          "tiempo_inicio": 5,
+          "tiempo_fin": 10,
+          "volumen_segmento": -29.402539123461207
+        },
+        {
+          "transcription": "misiones Acacia",
+          "palabras_detectadas": [
+            "misiones",
+            "acacia"
+          ],
+          "palabras_totales": 2,
+          "intentos_comunicacion": 2,
+          "palabras_infantiles": [
+            "misiones"
+          ],
+          "longitud_promedio_palabra": 7.0,
+          "calidad_comunicacion": "comunicacion_limitada",
+          "confidence": "alta",
+          "success": true,
+          "tiempo_inicio": 10,
+          "tiempo_fin": 14.272,
+          "volumen_segmento": -26.352364832616296
+        }
+      ],
+      "metricas_audio": {}
+    },
+    "recomendaciones_genericas": [
+      "🌊 Variabilidad emocional alta detectada - trabajar estrategias de estabilización",
+      "📈 Expandir vocabulario funcional mediante rutinas diarias",
+      "🔄 Usar técnicas de modelado y expansión de frases",
+      "🎭 Implementar juegos de imitación vocal y verbal",
+      "📚 Crear oportunidades de comunicación espontánea",
+      "🗣️ Terapia del habla enfocada en inteligibilidad",
+      "🔗 Fomentar combinación de palabras en frases simples",
+      "📸 Baja confianza en detección emocional - considerar mejores condiciones de grabación para futuros análisis",
+      "📅 Realizar seguimiento en 2-3 semanas para evaluar progreso",
+      "👨‍👩‍👧‍👦 Involucrar a todos los cuidadores en la implementación de estrategias",
+      "📊 Documentar cambios observados para ajustar intervenciones"
+    ],
+    "recomendaciones_ia": {
+      "recomendaciones_generales": [],
+      "recomendaciones_especificas": [],
+      "actividades_sugeridas": [
+        "📖 Lectura interactiva diaria con preguntas simples",
+        "🎭 Juegos de imitación vocal y gestual",
+        "🔤 Expansión de vocabulario temático semanal"
+      ],
+      "objetivos_terapeuticos": [],
+      "alertas": [],
+      "metadata": {
+        "fecha_generacion": "2025-10-15 22:57:03",
+        "diagnostico_procesado": "",
+        "nivel_confianza": "media",
+        "proxima_revision": "2 semanas"
+      },
+      "recursos": []
+    },
+    "histograma_path": "./resultados\\informes_20251015\\graficos\\histograma_sesion_20251015_225651.png",
+    "timeline_path": "./resultados\\informes_20251015\\graficos\\timeline_sesion_20251015_225651.png",
+    "dashboard_path": "./resultados\\informes_20251015\\graficos\\dashboard_sesion_20251015_225651.png",
+    "reporte_path": "./resultados\\informes_20251015\\reportes\\reporte_sesion_20251015_225651.txt",
+    "csv_path": "./resultados\\informes_20251015\\exportaciones\\datos_sesion_20251015_225651.csv"
+  }
+}

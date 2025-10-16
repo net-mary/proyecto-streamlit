@@ -33,15 +33,24 @@ class EmotionEnsemble:
         Args:
             models_dir (str): Directorio que contiene los modelos pre-entrenados
         """
+        # CRÍTICO: Inicializar logger PRIMERO
+        self.logger = logging.getLogger(self.__class__.__name__)
+        self.logger.setLevel(logging.INFO)
+        
+        # Crear handler si no existe
+        if not self.logger.handlers:
+            handler = logging.StreamHandler()
+            handler.setLevel(logging.INFO)
+            formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+            handler.setFormatter(formatter)
+            self.logger.addHandler(handler)
+        
+        # Ahora sí, el resto de la inicialización
         self.models_dir = models_dir
         self.models = []
         self.input_shapes = []
         self.model_weights = []  # Pesos para el ensemble
         self.model_info = []  # Información de cada modelo
-        
-        # Configurar logging
-        logging.basicConfig(level=logging.INFO)
-        self.logger = logging.getLogger(self.__class__.__name__)
         
         # Definir emociones estándar (FER-2013)
         self.emotions = ['Angry', 'Disgust', 'Fear', 'Happy', 'Sad', 'Surprise', 'Neutral']
@@ -57,7 +66,7 @@ class EmotionEnsemble:
             'Neutral': 'Neutral'
         }
         
-        # Configuración de modelos disponibles
+        # Configuración de modelos disponibles - CORREGIDO
         self.available_models = {
             "FER_model.h5": {
                 "weight": 0.4,
@@ -69,7 +78,7 @@ class EmotionEnsemble:
                 "description": "Modelo mini-XCEPTION optimizado",
                 "expected_input": (64, 64, 1)
             },
-            "emotion_model_v2.h5": {
+            "emotion_model.hdf5": {  # CORREGIDO: era emotion_model_v2.h5
                 "weight": 0.3,
                 "description": "Modelo de emociones v2",
                 "expected_input": (48, 48, 1)
@@ -85,9 +94,6 @@ class EmotionEnsemble:
             self.logger.warning(f"No se pudo cargar cascade facial: {e}")
             self.face_cascade = None
         
-        # Cargar modelos disponibles
-        self.load_models()
-        
         # Métricas de rendimiento
         self.performance_metrics = {
             'predictions_made': 0,
@@ -96,6 +102,9 @@ class EmotionEnsemble:
             'model_errors': 0,
             'session_start': datetime.now()
         }
+        
+        # Cargar modelos disponibles
+        self.load_models()
 
     def load_models(self):
         """Carga todos los modelos disponibles en el directorio."""
@@ -152,9 +161,11 @@ class EmotionEnsemble:
                     
                 except Exception as e:
                     self.logger.error(f"Error cargando {model_filename}: {e}")
+                    import traceback
+                    traceback.print_exc()
                     continue
             else:
-                self.logger.info(f"Modelo no encontrado: {model_filename}")
+                self.logger.info(f"Modelo no encontrado: {model_filename} en {model_path}")
         
         if loaded_count == 0:
             self.logger.warning("No se cargaron modelos. Creando modelo de fallback...")
@@ -162,7 +173,10 @@ class EmotionEnsemble:
         else:
             # Normalizar pesos
             self._normalize_weights()
-            self.logger.info(f"Ensemble inicializado con {loaded_count} modelos")
+            self.logger.info(f"✅ Ensemble inicializado con {loaded_count} modelos")
+            
+            # IMPORTANTE: Marcar que NO estamos en modo fallback
+            self.fallback_mode = False
 
     def _create_fallback_model(self):
         """Crea un modelo de fallback simple basado en reglas cuando no hay modelos disponibles."""
@@ -210,16 +224,23 @@ class EmotionEnsemble:
             else:
                 gray = face_img
             
-            # Redimensionar a la forma objetivo
+            # CRÍTICO: Asegurar que la imagen sea uint8 ANTES de CLAHE
+            if gray.dtype != np.uint8:
+                gray = np.clip(gray, 0, 255).astype(np.uint8)
+            
+            # Redimensionar a la forma objetivo PRIMERO
             height, width = target_shape[0], target_shape[1]
             resized = cv2.resize(gray, (width, height), interpolation=cv2.INTER_AREA)
             
-            # Normalización y ecualización adaptativa
-            # Aplicar CLAHE (Contrast Limited Adaptive Histogram Equalization)
-            clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8, 8))
-            enhanced = clahe.apply(resized.astype(np.uint8))
+            # Asegurar que resized sea uint8 para CLAHE
+            if resized.dtype != np.uint8:
+                resized = np.clip(resized, 0, 255).astype(np.uint8)
             
-            # Normalizar a rango [0, 1]
+            # Aplicar CLAHE para mejorar contraste
+            clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8, 8))
+            enhanced = clahe.apply(resized)
+            
+            # NORMALIZAR correctamente a rango [0, 1]
             face_normalized = enhanced.astype('float32') / 255.0
             
             # Agregar dimensión de canal si es necesario
@@ -233,8 +254,16 @@ class EmotionEnsemble:
             
         except Exception as e:
             self.logger.error(f"Error preprocesando rostro: {e}")
-            # Retornar imagen básica en caso de error
-            fallback = np.zeros((1, target_shape[0], target_shape[1], target_shape[2]))
+            # Retornar imagen básica en caso de error (NO ceros, usar imagen válida)
+            height, width = target_shape[0], target_shape[1]
+            channels = target_shape[2] if len(target_shape) == 3 else 1
+            
+            # Crear imagen neutral (gris medio) en lugar de negra
+            if channels == 1:
+                fallback = np.ones((1, height, width, channels), dtype=np.float32) * 0.5
+            else:
+                fallback = np.ones((1, height, width, channels), dtype=np.float32) * 0.5
+            
             return fallback
 
     def predict_emotion(self, face_img: np.ndarray) -> Tuple[str, float]:
@@ -314,18 +343,18 @@ class EmotionEnsemble:
             return self._fallback_prediction(face_img)
 
     def _apply_confidence_smoothing(self, predictions: np.ndarray, 
-                                   smoothing_factor: float = 0.1) -> np.ndarray:
+                                   smoothing_factor: float = 0.05) -> np.ndarray:
         """
         Aplica suavizado a las predicciones para evitar sobreconfianza.
         
         Args:
             predictions (np.ndarray): Predicciones originales
-            smoothing_factor (float): Factor de suavizado
+            smoothing_factor (float): Factor de suavizado (reducido de 0.1 a 0.05)
             
         Returns:
             np.ndarray: Predicciones suavizadas
         """
-        # Aplicar suavizado de Laplace
+        # Aplicar suavizado de Laplace MÁS SUAVE
         uniform_dist = np.ones(len(predictions)) / len(predictions)
         smoothed = (1 - smoothing_factor) * predictions + smoothing_factor * uniform_dist
         

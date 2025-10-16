@@ -1,0 +1,36 @@
+{
+  "sesion_info": {
+    "timestamp": "20251007_191741",
+    "video_analizado": "WhatsApp Video 2025-08-25 at 18.52.03.mp4",
+    "duracion_analisis": "0:00:14.427816"
+  },
+  "estadisticas": {
+    "frames_procesados": 430,
+    "frames_analizados": 15,
+    "frames_con_rostros": 14,
+    "rostros_detectados": 40,
+    "emociones_totales": 221,
+    "promedio_emociones_por_rostro": 5.525,
+    "detecciones_alta_confianza": 0
+  },
+  "distribucion_emociones": {
+    "Sad": 40,
+    "Happy": 35,
+    "Angry": 38,
+    "Neutral": 31,
+    "Surprise": 39,
+    "Fear": 35,
+    "Disgust": 3
+  },
+  "metricas_calidad": {
+    "confianza_promedio": 0.17320895849874354,
+    "calidad_promedio": 0.6482081447963799,
+    "confianza_maxima": 0.5963892893295464,
+    "confianza_minima": 0.050065700015980784
+  },
+  "archivos_generados": {
+    "directorio_sesion": "./resultados\\fotogramas_detectados\\sesion_20251007_191741",
+    "directorio_frames": "./resultados\\fotogramas_detectados\\sesion_20251007_191741\\frames",
+    "directorio_rostros": "./resultados\\fotogramas_detectados\\sesion_20251007_191741\\rostros"
+  }
+}

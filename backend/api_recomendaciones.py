@@ -20,6 +20,19 @@ class ApiRecomendaciones:
             token (str): Token de autenticación
             max_retries (int): Número máximo de reintentos
         """
+        # CRÍTICO: Inicializar logger PRIMERO
+        self.logger = logging.getLogger(self.__class__.__name__)
+        self.logger.setLevel(logging.INFO)
+        
+        # Crear handler si no existe
+        if not self.logger.handlers:
+            handler = logging.StreamHandler()
+            handler.setLevel(logging.INFO)
+            formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+            handler.setFormatter(formatter)
+            self.logger.addHandler(handler)
+        
+        # Ahora sí, el resto
         self.base_url = base_url
         self.token = token
         self.max_retries = max_retries
@@ -32,10 +45,6 @@ class ApiRecomendaciones:
                 "Content-Type": "application/json",
                 "Accept": "application/json"
             })
-        
-        # Configurar logging
-        logging.basicConfig(level=logging.INFO)
-        self.logger = logging.getLogger(self.__class__.__name__)
         
         # Cache simple para evitar llamadas repetitivas
         self.cache = {}

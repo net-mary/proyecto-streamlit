@@ -1,0 +1,215 @@
+{
+  "metadata": {
+    "fecha_generacion": "2025-10-07T20:20:07.446278",
+    "version_sistema": "2.0"
+  },
+  "informacion_personal": {
+    "nombre": "",
+    "edad": 5,
+    "diagnostico": "",
+    "rol_usuario": "Padre/Madre",
+    "contexto_video": ""
+  },
+  "resultados_analisis": {
+    "session_id": "sesion_20251007_201929",
+    "timestamp_inicio": "2025-10-07T20:19:29.503355",
+    "video_analizado": "mi_video.mp4",
+    "configuracion_usada": {
+      "intervalo_analisis_ms": 1000,
+      "umbral_confianza": 0.05,
+      "priorizar_emociones": [],
+      "alertas_especiales": [],
+      "guardar_frames": true
+    },
+    "datos_personales": {
+      "nombre": "",
+      "edad": 5,
+      "diagnostico": "",
+      "rol_usuario": "Padre/Madre",
+      "contexto_video": ""
+    },
+    "etapas_completadas": [
+      "analisis_emociones",
+      "analisis_audio",
+      "recomendaciones_genericas",
+      "recomendaciones_ia"
+    ],
+    "errores": [],
+    "emociones": [],
+    "estadisticas_emociones": {},
+    "audio": {
+      "transcription": "Búscame un berrinche es una conducta intencionada para obtener algún algo deseado un juguete la atención y es algo que ellos sí pueden manejar Así que es importante que lo sepas y puedas distinguir",
+      "palabras_detectadas": [
+        "búscame",
+        "un",
+        "berrinche",
+        "es",
+        "una",
+        "conducta",
+        "intencionada",
+        "para",
+        "obtener",
+        "algún",
+        "algo",
+        "deseado",
+        "un",
+        "juguete",
+        "la",
+        "atención",
+        "es",
+        "algo",
+        "que",
+        "ellos",
+        "sí",
+        "pueden",
+        "manejar",
+        "así",
+        "que",
+        "es",
+        "importante",
+        "que",
+        "lo",
+        "sepas",
+        "puedas",
+        "distinguir"
+      ],
+      "palabras_totales": 32,
+      "intentos_comunicacion": 32,
+      "palabras_infantiles": [],
+      "longitud_promedio_palabra": 5.06,
+      "calidad_comunicacion": "comunicacion_activa",
+      "confidence": "alta",
+      "success": true,
+      "info_extraccion": {
+        "ruta_audio": "./audio_extraido\\audio_extraido_20251007_201955.wav",
+        "duracion_segundos": 12.701,
+        "volumen_promedio_db": -18.3968700018823,
+        "frecuencia_muestreo": 16000,
+        "canales": 1,
+        "timestamp": "20251007_201955",
+        "success": true
+      },
+      "analisis_segmentos": [
+        {
+          "transcription": "Búscame un berrinche es una conducta intencionada para obtener algún algo",
+          "palabras_detectadas": [
+            "búscame",
+            "un",
+            "berrinche",
+            "es",
+            "una",
+            "conducta",
+            "intencionada",
+            "para",
+            "obtener",
+            "algún",
+            "algo"
+          ],
+          "palabras_totales": 11,
+          "intentos_comunicacion": 11,
+          "palabras_infantiles": [],
+          "longitud_promedio_palabra": 5.73,
+          "calidad_comunicacion": "comunicacion_activa",
+          "confidence": "alta",
+          "success": true,
+          "tiempo_inicio": 0,
+          "tiempo_fin": 5,
+          "volumen_segmento": -16.753210877817136
+        },
+        {
+          "transcription": "fue de la atención y es algo que ellos sí pueden manejar Así que es",
+          "palabras_detectadas": [
+            "fue",
+            "de",
+            "la",
+            "atención",
+            "es",
+            "algo",
+            "que",
+            "ellos",
+            "sí",
+            "pueden",
+            "manejar",
+            "así",
+            "que",
+            "es"
+          ],
+          "palabras_totales": 14,
+          "intentos_comunicacion": 14,
+          "palabras_infantiles": [],
+          "longitud_promedio_palabra": 3.71,
+          "calidad_comunicacion": "comunicacion_activa",
+          "confidence": "alta",
+          "success": true,
+          "tiempo_inicio": 5,
+          "tiempo_fin": 10,
+          "volumen_segmento": -19.12044270400456
+        },
+        {
+          "transcription": "lo sepas si puedes distinguir",
+          "palabras_detectadas": [
+            "lo",
+            "sepas",
+            "si",
+            "puedes",
+            "distinguir"
+          ],
+          "palabras_totales": 5,
+          "intentos_comunicacion": 5,
+          "palabras_infantiles": [
+            "si"
+          ],
+          "longitud_promedio_palabra": 5.0,
+          "calidad_comunicacion": "comunicacion_basica",
+          "confidence": "alta",
+          "success": true,
+          "tiempo_inicio": 10,
+          "tiempo_fin": 12.701,
+          "volumen_segmento": -22.036298755223243
+        }
+      ],
+      "metricas_audio": {
+        "segmentos_analizados": 3,
+        "segmentos_con_comunicacion": 3,
+        "total_palabras_detectadas": 30,
+        "total_intentos_comunicativos": 30,
+        "promedio_palabras_por_segmento": 10.0,
+        "porcentaje_segmentos_activos": 100.0,
+        "analisis_volumen": {
+          "volumen_promedio_db": -19.303317445681646,
+          "volumen_max_db": -16.753210877817136,
+          "volumen_min_db": -22.036298755223243,
+          "variabilidad_volumen": 2.160684576464357
+        }
+      }
+    },
+    "recomendaciones_genericas": [
+      "💬 Fomentar conversación elaborada y narrativa",
+      "📖 Trabajar comprensión de textos y seguimiento de instrucciones complejas",
+      "🎯 Desarrollar habilidades pragmáticas del lenguaje",
+      "👶 Fomentar vocabulario apropiado para la edad cronológica",
+      "📸 Baja confianza en detección emocional - considerar mejores condiciones de grabación para futuros análisis",
+      "🎥 Baja detección facial - asegurar buena iluminación y posición del niño frente a la cámara",
+      "📅 Realizar seguimiento en 2-3 semanas para evaluar progreso",
+      "👨‍👩‍👧‍👦 Involucrar a todos los cuidadores en la implementación de estrategias",
+      "📊 Documentar cambios observados para ajustar intervenciones"
+    ],
+    "recomendaciones_ia": {
+      "recomendaciones_generales": [],
+      "recomendaciones_especificas": [],
+      "actividades_sugeridas": [],
+      "objetivos_terapeuticos": [],
+      "alertas": [],
+      "metadata": {
+        "fecha_generacion": "2025-10-07 20:20:06",
+        "diagnostico_procesado": "",
+        "nivel_confianza": "media",
+        "proxima_revision": "2 semanas"
+      },
+      "recursos": []
+    },
+    "dashboard_path": "./resultados\\informes_20251007\\graficos\\dashboard_sesion_20251007_201929.png",
+    "reporte_path": "./resultados\\informes_20251007\\reportes\\reporte_sesion_20251007_201929.txt",
+    "csv_path": ""
+  }
+}

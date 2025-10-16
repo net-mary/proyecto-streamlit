@@ -1,0 +1,13 @@
+{
+  "sesion_info": {
+    "timestamp": "20251007_201929",
+    "video_analizado": "mi_video.mp4"
+  },
+  "estadisticas": {
+    "frames_analizados": 13,
+    "rostros_detectados": 72
+  },
+  "archivos_generados": {
+    "directorio_sesion": "./resultados\\fotogramas_detectados\\sesion_20251007_201929"
+  }
+}

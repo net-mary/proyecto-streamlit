@@ -1,0 +1,3 @@
+frame_id,tiempo_segundos,emocion,confianza,face_id
+0,0.0,Happy,0.7513904246250753,0
+29,0.9771350066934403,Happy,0.5133045311066762,0

@@ -1,0 +1,250 @@
+{
+  "session_id": "sesion_20251001_204819",
+  "timestamp_inicio": "2025-10-01T20:48:19.922081",
+  "video_analizado": "WhatsApp Video 2025-08-25 at 18.52.03.mp4",
+  "configuracion_usada": {
+    "intervalo_analisis_ms": 1000,
+    "umbral_confianza": 0.5,
+    "priorizar_emociones": [],
+    "alertas_especiales": [],
+    "guardar_frames": true
+  },
+  "datos_personales": {
+    "nombre": "",
+    "edad": 5,
+    "diagnostico": "",
+    "rol_usuario": "Padre/Madre",
+    "contexto_video": ""
+  },
+  "etapas_completadas": [
+    "analisis_emociones",
+    "analisis_audio",
+    "recomendaciones_genericas",
+    "recomendaciones_ia",
+    "generacion_informes",
+    "evaluacion_alertas"
+  ],
+  "errores": [],
+  "emociones": [
+    {
+      "frame_id": 420,
+      "timestamp": "20251001_204827_566",
+      "tiempo_video": 13.997981395348837,
+      "num_faces": 1,
+      "emociones": [
+        {
+          "emotion": "Sad",
+          "confidence": 0.5045920058843414,
+          "quality_score": 0.638,
+          "high_confidence": false,
+          "frame_id": 420,
+          "face_id": 0,
+          "timestamp": "2025-10-01T20:48:28.018791",
+          "image_size": [
+            118,
+            118
+          ],
+          "bbox": [
+            "135",
+            "343",
+            "118",
+            "118"
+          ],
+          "area": "13924",
+          "saved_face_path": "./resultados\\fotogramas_detectados\\sesion_20251001_204819\\rostros\\rostro_f000420_r00_Sad_conf0.50_qual0.64_20251001_204828_018.jpg"
+        }
+      ],
+      "frame_path": "./resultados\\fotogramas_detectados\\sesion_20251001_204819\\frames\\frame_000420_20251001_204827_566.jpg",
+      "calidad_promedio": 0.638,
+      "emociones_filtradas": 0
+    }
+  ],
+  "estadisticas_emociones": {
+    "frames_analizados": 1,
+    "frames_con_detecciones": 1,
+    "total_detecciones": 1,
+    "promedio_detecciones_por_frame": 1.0,
+    "distribucion_emociones": {
+      "Sad": 1
+    },
+    "emocion_predominante": {
+      "emocion": "Sad",
+      "count": 1,
+      "porcentaje": 100.0
+    },
+    "confianza_por_emocion": {
+      "Sad": {
+        "promedio": 0.5045920058843414,
+        "mediana": 0.5045920058843414,
+        "std": 0.0,
+        "min": 0.5045920058843414,
+        "max": 0.5045920058843414
+      }
+    }
+  },
+  "audio": {
+    "transcription": "misión menor la canción",
+    "palabras_detectadas": [
+      "misión",
+      "menor",
+      "la",
+      "canción"
+    ],
+    "palabras_totales": 4,
+    "intentos_comunicacion": 4,
+    "palabras_infantiles": [
+      "misión",
+      "menor"
+    ],
+    "longitud_promedio_palabra": 5.0,
+    "calidad_comunicacion": "comunicacion_basica",
+    "confidence": "alta",
+    "success": true,
+    "info_extraccion": {
+      "ruta_audio": "./audio_extraido\\audio_extraido_20251001_204828.wav",
+      "duracion_segundos": 14.272,
+      "volumen_promedio_db": -28.71090934585994,
+      "frecuencia_muestreo": 16000,
+      "canales": 1,
+      "timestamp": "20251001_204828",
+      "success": true
+    },
+    "analisis_segmentos": [
+      {
+        "transcription": "misión menor la canción",
+        "palabras_detectadas": [
+          "misión",
+          "menor",
+          "la",
+          "canción"
+        ],
+        "palabras_totales": 4,
+        "intentos_comunicacion": 4,
+        "palabras_infantiles": [
+          "misión",
+          "menor"
+        ],
+        "longitud_promedio_palabra": 5.0,
+        "calidad_comunicacion": "comunicacion_basica",
+        "confidence": "alta",
+        "success": true,
+        "tiempo_inicio": 0,
+        "tiempo_fin": 5,
+        "volumen_segmento": -31.458916575832742
+      },
+      {
+        "transcription": "",
+        "palabras_detectadas": [],
+        "palabras_totales": 0,
+        "intentos_comunicacion": 0,
+        "palabras_infantiles": [],
+        "longitud_promedio_palabra": 0,
+        "calidad_comunicacion": "sin_deteccion",
+        "confidence": "nula",
+        "success": true,
+        "nota": "Audio no reconocible - puede indicar comunicación no verbal",
+        "tiempo_inicio": 5,
+        "tiempo_fin": 10,
+        "volumen_segmento": -29.402539123461207
+      },
+      {
+        "transcription": "misiones Acacia",
+        "palabras_detectadas": [
+          "misiones",
+          "acacia"
+        ],
+        "palabras_totales": 2,
+        "intentos_comunicacion": 2,
+        "palabras_infantiles": [
+          "misiones"
+        ],
+        "longitud_promedio_palabra": 7.0,
+        "calidad_comunicacion": "comunicacion_limitada",
+        "confidence": "alta",
+        "success": true,
+        "tiempo_inicio": 10,
+        "tiempo_fin": 14.272,
+        "volumen_segmento": -26.352364832616296
+      }
+    ],
+    "metricas_audio": {
+      "segmentos_analizados": 3,
+      "segmentos_con_comunicacion": 2,
+      "total_palabras_detectadas": 6,
+      "total_intentos_comunicativos": 6,
+      "promedio_palabras_por_segmento": 2.0,
+      "porcentaje_segmentos_activos": 66.66666666666666,
+      "analisis_volumen": {
+        "volumen_promedio_db": -29.071273510636747,
+        "volumen_max_db": -26.352364832616296,
+        "volumen_min_db": -31.458916575832742,
+        "variabilidad_volumen": 2.0978592828908083
+      }
+    }
+  },
+  "recomendaciones_genericas": [
+    "⚠️ Se detectó predominio de emociones negativas - evaluación psicoemocional recomendada",
+    "🌟 Implementar actividades de regulación emocional y bienestar",
+    "🎨 Fomentar expresión creativa (arte, música) para canalizar emociones",
+    "💝 Aumentar refuerzos positivos y celebración de logros pequeños",
+    "😢 Alta frecuencia de tristeza detectada - considerar evaluación de depresión infantil",
+    "🎵 Implementar musicoterapia y actividades que generen bienestar",
+    "🤗 Aumentar tiempo de interacción social positiva y juego colaborativo",
+    "🏃 Incluir actividad física regular para mejorar estado de ánimo",
+    "📊 Expresión emocional muy limitada - estimular rango expresivo",
+    "📈 Expandir vocabulario funcional mediante rutinas diarias",
+    "🔄 Usar técnicas de modelado y expansión de frases",
+    "🎭 Implementar juegos de imitación vocal y verbal",
+    "📚 Crear oportunidades de comunicación espontánea",
+    "🗣️ Terapia del habla enfocada en inteligibilidad",
+    "🔗 Fomentar combinación de palabras en frases simples",
+    "📅 Realizar seguimiento en 2-3 semanas para evaluar progreso",
+    "👨‍👩‍👧‍👦 Involucrar a todos los cuidadores en la implementación de estrategias",
+    "📊 Documentar cambios observados para ajustar intervenciones"
+  ],
+  "recomendaciones_ia": {
+    "recomendaciones_generales": [],
+    "recomendaciones_especificas": [],
+    "actividades_sugeridas": [
+      "🎵 Sesiones de musicoterapia 3 veces por semana",
+      "🎨 Actividades de expresión artística libre",
+      "🤗 Tiempo de juego estructurado con adulto significativo",
+      "📖 Lectura interactiva diaria con preguntas simples",
+      "🎭 Juegos de imitación vocal y gestual",
+      "🔤 Expansión de vocabulario temático semanal"
+    ],
+    "objetivos_terapeuticos": [],
+    "alertas": [
+      "⚠️ Nivel alto de tristeza detectado - considerar evaluación emocional"
+    ],
+    "metadata": {
+      "fecha_generacion": "2025-10-01 20:48:39",
+      "diagnostico_procesado": "",
+      "nivel_confianza": "media",
+      "proxima_revision": "2 semanas"
+    },
+    "recursos": [],
+    "prioridad_alta": [
+      "⚠️ Nivel alto de tristeza detectado - considerar evaluación emocional"
+    ]
+  },
+  "histograma_path": "./resultados\\informes_20251001\\graficos\\histograma_sesion_20251001_204819.png",
+  "timeline_path": "./resultados\\informes_20251001\\graficos\\timeline_sesion_20251001_204819.png",
+  "dashboard_path": "./resultados\\informes_20251001\\graficos\\dashboard_sesion_20251001_204819.png",
+  "reporte_path": "./resultados\\informes_20251001\\reportes\\reporte_sesion_20251001_204819.txt",
+  "csv_path": "./resultados\\informes_20251001\\exportaciones\\datos_sesion_20251001_204819.csv",
+  "json_path": "./resultados\\informes_20251001\\exportaciones\\reporte_sesion_20251001_204819.json",
+  "alertas": [
+    {
+      "tipo": "emocional",
+      "nivel": "alto",
+      "mensaje": "Predominio de emociones negativas (100.0%)",
+      "recomendacion": "Evaluación psicoemocional urgente recomendada",
+      "timestamp": "2025-10-01T20:48:43.754597"
+    }
+  ],
+  "nivel_prioridad": "critico",
+  "timestamp_fin": "2025-10-01T20:48:43.755236",
+  "tiempo_procesamiento": "0:00:23.833149",
+  "tiempo_procesamiento_segundos": 23.833149
+}

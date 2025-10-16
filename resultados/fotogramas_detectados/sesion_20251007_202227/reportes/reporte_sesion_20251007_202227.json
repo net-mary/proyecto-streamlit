@@ -1,0 +1,13 @@
+{
+  "sesion_info": {
+    "timestamp": "20251007_202227",
+    "video_analizado": "WhatsApp Video 2025-08-20 at 14.23.53.mp4"
+  },
+  "estadisticas": {
+    "frames_analizados": 18,
+    "rostros_detectados": 117
+  },
+  "archivos_generados": {
+    "directorio_sesion": "./resultados\\fotogramas_detectados\\sesion_20251007_202227"
+  }
+}

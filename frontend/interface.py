@@ -16,7 +16,8 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 try:
     from backend.pipeline import PipelineAnalisisEmocional
-    from frontend.components.timeline_emotions import TimelineEmotions
+    from backend.generador_informes import GeneradorInformes
+    from backend.email_sender import EmailSender
 except ImportError as e:
     st.error(f"Error importando módulos: {e}")
     st.stop()
@@ -91,6 +92,8 @@ def initialize_session_state():
         st.session_state.processing = False
     if 'pipeline' not in st.session_state:
         st.session_state.pipeline = None
+    if 'informes_generados' not in st.session_state:
+        st.session_state.informes_generados = None
 
 def render_header():
     st.markdown("""
@@ -135,6 +138,9 @@ def render_sidebar():
     
     st.sidebar.markdown("#### 👶 Información del Participante")
     
+    datos_personales = {}
+    configuracion = {}
+    
     with st.sidebar.form("datos_personales"):
         nombre = st.text_input("Nombre", placeholder="Nombre del niño")
         edad = st.number_input("Edad", min_value=1, max_value=18, value=5)
@@ -150,22 +156,20 @@ def render_sidebar():
         contexto_video = st.text_area("Contexto del video", placeholder="Describe la situación...", height=100)
         
         submit_info = st.form_submit_button("Guardar Información")
-        if submit_info and nombre:
-            st.success("Información guardada")
     
     datos_personales = {
-        "nombre": nombre if 'nombre' in locals() and nombre else "",
-        "edad": edad if 'edad' in locals() else 5,
-        "diagnostico": diagnostico if 'diagnostico' in locals() and diagnostico else "",
-        "rol_usuario": rol_usuario if 'rol_usuario' in locals() else "Padre/Madre",
-        "contexto_video": contexto_video if 'contexto_video' in locals() else ""
-    } if 'nombre' in locals() else {}
+        "nombre": nombre,
+        "edad": edad,
+        "diagnostico": diagnostico,
+        "rol_usuario": rol_usuario,
+        "contexto_video": contexto_video
+    }
     
     configuracion = {
-        "intervalo_analisis_ms": intervalo_analisis if 'intervalo_analisis' in locals() else 1000,
-        "umbral_confianza": umbral_confianza if 'umbral_confianza' in locals() else 0.05,
-        "guardar_frames": guardar_frames if 'guardar_frames' in locals() else True
-    } if 'intervalo_analisis' in locals() else {}
+        "intervalo_analisis_ms": intervalo_analisis,
+        "umbral_confianza": umbral_confianza,
+        "guardar_frames": guardar_frames
+    }
     
     return video_file, models_dir, language, datos_personales, configuracion
 
@@ -186,36 +190,16 @@ def display_metrics_dashboard(results: Dict):
     col1, col2, col3, col4 = st.columns(4)
     
     with col1:
-        st.markdown(f"""
-        <div class="metric-card">
-            <div class="metric-value">{total_frames}</div>
-            <div class="metric-label">Marcos analizados</div>
-        </div>
-        """, unsafe_allow_html=True)
+        st.metric("Marcos analizados", total_frames)
     
     with col2:
-        st.markdown(f"""
-        <div class="metric-card">
-            <div class="metric-value">{total_rostros}</div>
-            <div class="metric-label">Rostros detectados</div>
-        </div>
-        """, unsafe_allow_html=True)
+        st.metric("Rostros detectados", total_rostros)
     
     with col3:
-        st.markdown(f"""
-        <div class="metric-card">
-            <div class="metric-value">{palabras}</div>
-            <div class="metric-label">Palabras detectadas</div>
-        </div>
-        """, unsafe_allow_html=True)
+        st.metric("Palabras detectadas", palabras)
     
     with col4:
-        st.markdown(f"""
-        <div class="metric-card">
-            <div class="metric-value">{alertas_count}</div>
-            <div class="metric-label">Alertas</div>
-        </div>
-        """, unsafe_allow_html=True)
+        st.metric("Alertas", alertas_count)
     
     if total_rostros > 0:
         st.info(f"Total de emociones detectadas: {total_rostros}")
@@ -289,30 +273,172 @@ def display_audio_analysis(audio_data: Dict):
         st.metric("Palabras Totales", audio_data.get('palabras_totales', 0))
         st.metric("Intentos Comunicativos", audio_data.get('intentos_comunicacion', 0))
 
-def display_recommendations(recomendaciones: List[str]):
+def display_recommendations(recomendaciones: List):
     st.markdown("### Recomendaciones Personalizadas")
     
     if not recomendaciones:
         st.info("No hay recomendaciones disponibles.")
     else:
         for i, rec in enumerate(recomendaciones, 1):
-            st.info(f"**{i}.** {rec}")
+            if isinstance(rec, dict):
+                st.info(f"**{i}. {rec.get('title', 'Recomendación')}**\n\n{rec.get('text', '')}")
+            else:
+                st.info(f"**{i}.** {rec}")
 
-def display_reports_section(results: Dict):
-    st.markdown("### Reportes y Exportaciones")
+def display_reports_section(results: Dict, datos_personales: Dict):
+    st.markdown("### Generar y Descargar Reportes")
     
-    archivos = results.get('archivos_generados', {})
-    histograma = results.get('histograma', '')
-    reporte = results.get('reporte', '')
+    col1, col2 = st.columns(2)
     
-    if histograma and os.path.exists(histograma):
-        st.markdown("#### Histograma de Emociones")
-        st.image(histograma, use_column_width=True)
+    with col1:
+        if st.button("📥 Generar Todos los Informes", type="primary"):
+            with st.spinner("Generando informes..."):
+                try:
+                    gen_informes = GeneradorInformes()
+                    archivos = gen_informes.generar_todos_informes(
+                        datos_analisis=results,
+                        info_personal=datos_personales
+                    )
+                    st.session_state.informes_generados = archivos
+                    st.success("Informes generados correctamente")
+                except Exception as e:
+                    st.error(f"Error generando informes: {e}")
+    
+    if st.session_state.informes_generados:
+        st.markdown("#### Descargar Archivos")
         
-        with open(histograma, 'rb') as file:
-            st.download_button("Descargar Histograma", file.read(),
-                f"histograma_{datetime.now().strftime('%Y%m%d_%H%M')}.png",
-                "image/png", use_container_width=True)
+        archivos = st.session_state.informes_generados
+        
+        col1, col2, col3 = st.columns(3)
+        
+        with col1:
+            if archivos.get('histograma') and os.path.exists(archivos['histograma']):
+                with open(archivos['histograma'], 'rb') as f:
+                    st.download_button("📊 Histograma", f, "histograma.png", "image/png")
+        
+        with col2:
+            if archivos.get('heatmap') and os.path.exists(archivos['heatmap']):
+                with open(archivos['heatmap'], 'rb') as f:
+                    st.download_button("🔥 Heatmap", f, "heatmap.png", "image/png")
+        
+        with col3:
+            if archivos.get('confianza') and os.path.exists(archivos['confianza']):
+                with open(archivos['confianza'], 'rb') as f:
+                    st.download_button("📈 Confianza", f, "confianza.png", "image/png")
+        
+        col1, col2, col3, col4 = st.columns(4)
+        
+        with col1:
+            if archivos.get('html') and os.path.exists(archivos['html']):
+                with open(archivos['html'], 'rb') as f:
+                    st.download_button("📄 HTML", f, "reporte.html", "text/html")
+        
+        with col2:
+            if archivos.get('resumen') and os.path.exists(archivos['resumen']):
+                with open(archivos['resumen'], 'rb') as f:
+                    st.download_button("📋 Resumen", f, "resumen.txt", "text/plain")
+        
+        with col3:
+            if archivos.get('csv') and os.path.exists(archivos['csv']):
+                with open(archivos['csv'], 'rb') as f:
+                    st.download_button("📊 CSV", f, "datos.csv", "text/csv")
+        
+        with col4:
+            if archivos.get('json') and os.path.exists(archivos['json']):
+                with open(archivos['json'], 'rb') as f:
+                    st.download_button("🔗 JSON", f, "reporte.json", "application/json")
+
+def display_email_section(results: Dict, datos_personales: Dict):
+    st.markdown("### Enviar Reporte por Email")
+    
+    st.info("Genera los informes primero antes de enviarlos por email")
+    
+    col1, col2 = st.columns(2)
+    with col1:
+        email_remitente = st.text_input(
+            "Tu email (Gmail)",
+            placeholder="ejemplo@gmail.com",
+            type="password"
+        )
+    
+    with col2:
+        email_password = st.text_input(
+            "Contraseña de aplicación",
+            placeholder="xxxxxx xxxxxx xxxxxx xxxxxx",
+            type="password",
+            help="Genera en myaccount.google.com > Seguridad > Contraseñas de aplicación"
+        )
+    
+    emails_destinatarios = st.text_area(
+        "Emails destinatarios (separados por comas)",
+        placeholder="padre@example.com, educador@example.com",
+        height=80
+    )
+    
+    asunto_custom = st.text_input(
+        "Asunto (opcional)",
+        placeholder=f"Análisis Emocional - {datos_personales.get('nombre', 'Participante')}"
+    )
+    
+    if st.button("Enviar por Email", type="primary"):
+        if not email_remitente or not email_password:
+            st.error("Completa email y contraseña")
+        elif not emails_destinatarios:
+            st.error("Ingresa al menos un email destinatario")
+        elif not st.session_state.informes_generados:
+            st.error("Genera los informes primero")
+        else:
+            with st.spinner("Enviando email..."):
+                try:
+                    sender = EmailSender(
+                        smtp_server="smtp.gmail.com",
+                        smtp_port=587,
+                        sender_email=email_remitente,
+                        sender_password=email_password
+                    )
+                    
+                    if not sender.verificar_conexion():
+                        st.error("No se pudo conectar al servidor")
+                        with st.expander("Ver instrucciones"):
+                            EmailSender.generar_instrucciones_gmail()
+                    else:
+                        destinatarios = [e.strip() for e in emails_destinatarios.split(',')]
+                        
+                        exito = sender.enviar_reporte(
+                            destinatarios=destinatarios,
+                            archivos=st.session_state.informes_generados,
+                            info_personal=datos_personales,
+                            datos_analisis=results,
+                            asunto=asunto_custom or f"Análisis Emocional - {datos_personales.get('nombre')}"
+                        )
+                        
+                        if exito:
+                            st.success(f"Email enviado a {len(destinatarios)} destinatarios")
+                            st.balloons()
+                        else:
+                            st.error("Error al enviar")
+                
+                except Exception as e:
+                    st.error(f"Error: {str(e)}")
+
+def display_session_info(results: Dict, datos_personales: Dict):
+    st.markdown("### Información de la Sesión")
+    
+    col1, col2 = st.columns(2)
+    
+    with col1:
+        st.markdown("**Datos del Participante:**")
+        for key, value in datos_personales.items():
+            if value:
+                st.write(f"- **{key.replace('_', ' ').title()}**: {value}")
+    
+    with col2:
+        st.markdown("**Información Técnica:**")
+        session_info = results.get('session_info', {})
+        st.write(f"- **Session ID**: {session_info.get('session_id', 'N/A')}")
+        st.write(f"- **Etapas**: {len(session_info.get('etapas_completadas', []))}")
+        st.write(f"- **Errores**: {len(session_info.get('errores', []))}")
+        st.write(f"- **Tiempo**: {results.get('session_info', {}).get('tiempo_procesamiento', 'N/A')}")
 
 def main():
     load_custom_css()
@@ -329,22 +455,15 @@ def main():
             st.sidebar.error("Por favor, sube un video antes de continuar")
     
     if st.session_state.processing and video_file:
-        # Crear directorio temporal
         temp_dir = os.path.abspath("./videos_temp")
         os.makedirs(temp_dir, exist_ok=True)
         
-        # Guardar con ruta absoluta
         temp_path = os.path.join(temp_dir, video_file.name)
-        
-        st.write(f"DEBUG: Guardando en: {temp_path}")
         
         try:
             with open(temp_path, "wb") as f:
                 f.write(video_file.getbuffer())
             
-            st.write(f"DEBUG: Archivo guardado. Tamaño: {os.path.getsize(temp_path)} bytes")
-            
-            # Verificar que existe
             if not os.path.exists(temp_path):
                 st.error("ERROR: Archivo no se guardó correctamente")
                 st.stop()
@@ -390,11 +509,9 @@ def main():
                 st.session_state.processing = False
             
             finally:
-                # Limpiar archivo
                 try:
                     if os.path.exists(temp_path):
                         os.remove(temp_path)
-                        st.write("DEBUG: Archivo eliminado")
                 except:
                     pass
     
@@ -406,11 +523,13 @@ def main():
         else:
             display_metrics_dashboard(results)
             
-            tab1, tab2, tab3, tab4 = st.tabs([
+            tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
                 "Análisis Emocional",
                 "Análisis de Audio",
                 "Recomendaciones",
-                "Reportes"
+                "Reportes",
+                "Email",
+                "Información"
             ])
             
             with tab1:
@@ -423,7 +542,13 @@ def main():
                 display_recommendations(results.get('recomendaciones', []))
             
             with tab4:
-                display_reports_section(results)
+                display_reports_section(results, datos_personales)
+            
+            with tab5:
+                display_email_section(results, datos_personales)
+            
+            with tab6:
+                display_session_info(results, datos_personales)
 
 if __name__ == "__main__":
     main()

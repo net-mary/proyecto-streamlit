@@ -1,0 +1,268 @@
+
+            <!DOCTYPE html>
+            <html lang="es">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Reporte de Análisis Emocional</title>
+                <style>
+                    * { margin: 0; padding: 0; }
+                    body {
+                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                        background-color: #f5f5f5;
+                        color: #333;
+                        line-height: 1.6;
+                    }
+                    .container {
+                        max-width: 900px;
+                        margin: 0 auto;
+                        background-color: white;
+                        padding: 40px;
+                        border-radius: 8px;
+                        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+                    }
+                    .header {
+                        text-align: center;
+                        border-bottom: 3px solid #3498DB;
+                        padding-bottom: 20px;
+                        margin-bottom: 30px;
+                    }
+                    .header h1 {
+                        color: #2C3E50;
+                        font-size: 28px;
+                        margin-bottom: 10px;
+                    }
+                    .header p {
+                        color: #7F8C8D;
+                        font-size: 14px;
+                    }
+                    .section {
+                        margin-bottom: 30px;
+                    }
+                    .section h2 {
+                        color: #2C3E50;
+                        font-size: 18px;
+                        margin-bottom: 15px;
+                        border-left: 4px solid #3498DB;
+                        padding-left: 10px;
+                    }
+                    .stats-grid {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        gap: 15px;
+                        margin-bottom: 20px;
+                    }
+                    .stat-box {
+                        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                        color: white;
+                        padding: 20px;
+                        border-radius: 6px;
+                        text-align: center;
+                    }
+                    .stat-box.secondary {
+                        background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+                    }
+                    .stat-value {
+                        font-size: 28px;
+                        font-weight: bold;
+                        margin-bottom: 5px;
+                    }
+                    .stat-label {
+                        font-size: 12px;
+                        opacity: 0.9;
+                    }
+                    table {
+                        width: 100%;
+                        border-collapse: collapse;
+                        margin-top: 15px;
+                    }
+                    th {
+                        background-color: #34495E;
+                        color: white;
+                        padding: 12px;
+                        text-align: left;
+                    }
+                    td {
+                        padding: 12px;
+                        border-bottom: 1px solid #ECF0F1;
+                    }
+                    tr:hover {
+                        background-color: #F8F9FA;
+                    }
+                    .emotion-row {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                    }
+                    .emotion-bar {
+                        flex-grow: 1;
+                        height: 20px;
+                        border-radius: 4px;
+                        background-color: #ECF0F1;
+                        position: relative;
+                    }
+                    .emotion-bar-fill {
+                        height: 100%;
+                        border-radius: 4px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: white;
+                        font-size: 11px;
+                        font-weight: bold;
+                    }
+                    .footer {
+                        text-align: center;
+                        margin-top: 30px;
+                        padding-top: 20px;
+                        border-top: 1px solid #ECF0F1;
+                        color: #7F8C8D;
+                        font-size: 12px;
+                    }
+                    .warning {
+                        background-color: #FFF3CD;
+                        border-left: 4px solid #FFC107;
+                        padding: 12px;
+                        margin-bottom: 15px;
+                        border-radius: 4px;
+                    }
+                    .success {
+                        background-color: #D4EDDA;
+                        border-left: 4px solid #28A745;
+                        padding: 12px;
+                        margin-bottom: 15px;
+                        border-radius: 4px;
+                    }
+                </style>
+            </head>
+            <body>
+                <div class="container">
+                    <div class="header">
+                        <h1>📊 Reporte de Análisis Emocional</h1>
+                        <p>Sistema de Análisis Multimodal para Niños con Discapacidad</p>
+                        <p style="margin-top: 10px; font-size: 13px;">16 de October de 2025 - 15:10:19</p>
+                    </div>
+            
+                    <div class="section">
+                        <h2>👤 Información del Participante</h2>
+                        <table>
+                            <tr>
+                <th>Nombre</th><th>Edad</th><th>Diagnostico</th><th>Rol Usuario</th><th>Contexto Video</th></tr><tr><td></td><td>5</td><td></td><td>Padre/Madre</td><td></td></tr></table></div>
+                    <div class="section">
+                        <h2>📈 Estadísticas Generales</h2>
+                        <div class="stats-grid">
+                            <div class="stat-box">
+                                <div class="stat-value">14</div>
+                                <div class="stat-label">Frames Analizados</div>
+                            </div>
+                            <div class="stat-box secondary">
+                                <div class="stat-value">85</div>
+                                <div class="stat-label">Emociones Detectadas</div>
+                            </div>
+                            <div class="stat-box">
+                                <div class="stat-value">17.9%</div>
+                                <div class="stat-label">Confianza Promedio</div>
+                            </div>
+                            <div class="stat-box secondary">
+                                <div class="stat-value">6</div>
+                                <div class="stat-label">Tipos de Emociones</div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="section">
+                        <h2>😊 Distribución de Emociones</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Emoción</th>
+                                    <th>Frecuencia</th>
+                                    <th>Porcentaje</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                
+                        <tr>
+                            <td><strong>Sad</strong></td>
+                            <td>15</td>
+                            <td>
+                                <div class="emotion-bar">
+                                    <div class="emotion-bar-fill" style="width: 17.647058823529413%; background-color: #3498DB;">
+                                        17.6%
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td><strong>Surprise</strong></td>
+                            <td>15</td>
+                            <td>
+                                <div class="emotion-bar">
+                                    <div class="emotion-bar-fill" style="width: 17.647058823529413%; background-color: #F39C12;">
+                                        17.6%
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td><strong>Fear</strong></td>
+                            <td>15</td>
+                            <td>
+                                <div class="emotion-bar">
+                                    <div class="emotion-bar-fill" style="width: 17.647058823529413%; background-color: #9B59B6;">
+                                        17.6%
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td><strong>Angry</strong></td>
+                            <td>15</td>
+                            <td>
+                                <div class="emotion-bar">
+                                    <div class="emotion-bar-fill" style="width: 17.647058823529413%; background-color: #E74C3C;">
+                                        17.6%
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td><strong>Neutral</strong></td>
+                            <td>14</td>
+                            <td>
+                                <div class="emotion-bar">
+                                    <div class="emotion-bar-fill" style="width: 16.470588235294116%; background-color: #95A5A6;">
+                                        16.5%
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td><strong>Happy</strong></td>
+                            <td>11</td>
+                            <td>
+                                <div class="emotion-bar">
+                                    <div class="emotion-bar-fill" style="width: 12.941176470588237%; background-color: #2ECC71;">
+                                        12.9%
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    
+                            </tbody>
+                        </table>
+                    </div>
+                
+                    <div class="footer">
+                        <p>Este reporte fue generado automáticamente por el Sistema de Análisis Emocional.</p>
+                        <p>Para más información, consulte la documentación del sistema.</p>
+                    </div>
+                </div>
+            </body>
+            </html>
+            

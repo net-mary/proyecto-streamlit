@@ -1,0 +1,81 @@
+
+===========================================================================
+RESUMEN EJECUTIVO - ANÁLISIS EMOCIONAL MULTIMODAL
+===========================================================================
+
+FECHA Y HORA: 16 de October de 2025 - 15:10:19
+SISTEMA: Análisis Emocional para Niños con Discapacidad v2.0
+
+───────────────────────────────────────────────────────────────────────────
+INFORMACIÓN DEL PARTICIPANTE
+───────────────────────────────────────────────────────────────────────────
+
+Nombre: 
+Edad: 5
+Diagnostico: 
+Rol Usuario: Padre/Madre
+Contexto Video: 
+
+───────────────────────────────────────────────────────────────────────────
+RESULTADOS GENERALES DEL ANÁLISIS
+───────────────────────────────────────────────────────────────────────────
+
+Frames analizados: 14
+Emociones detectadas: 85
+Emoción dominante: Sad (17.6%)
+Confianza promedio: 17.9%
+  - Mínima: 6.0%
+  - Máxima: 80.0%
+
+───────────────────────────────────────────────────────────────────────────
+DISTRIBUCIÓN DE EMOCIONES
+───────────────────────────────────────────────────────────────────────────
+
+Sad             | ████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  17.6% (  15)
+Surprise        | ████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  17.6% (  15)
+Fear            | ████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  17.6% (  15)
+Angry           | ████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  17.6% (  15)
+Neutral         | ████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  16.5% (  14)
+Happy           | ██████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  12.9% (  11)
+
+───────────────────────────────────────────────────────────────────────────
+ANÁLISIS ESTADÍSTICO
+───────────────────────────────────────────────────────────────────────────
+
+Media de confianza: 0.179
+Desv. estándar: 0.119 (si hay datos)
+Rango: 0.060 - 0.800
+
+Total de tipos de emociones detectadas: 6
+
+───────────────────────────────────────────────────────────────────────────
+RECOMENDACIONES
+───────────────────────────────────────────────────────────────────────────
+
+• Los resultados indican una detección exitosa de emociones.
+• Nivel de confianza bajo en las predicciones.
+• Se recomienda revisar los videos con precaución.
+• Consultar los gráficos generados para análisis más detallados.
+
+───────────────────────────────────────────────────────────────────────────
+ARCHIVOS GENERADOS
+───────────────────────────────────────────────────────────────────────────
+
+• Histograma de emociones (PNG)
+• Heatmap temporal (PNG)
+• Análisis de confianza (PNG)
+• Reporte HTML (para email)
+• Datos CSV (para procesamiento)
+• Reporte JSON (completo)
+
+───────────────────────────────────────────────────────────────────────────
+NOTAS
+───────────────────────────────────────────────────────────────────────────
+
+Este análisis fue realizado automáticamente por el Sistema de Análisis Emocional.
+Para validación clínica, consulte con profesionales especializados.
+Todos los datos han sido procesados respetando privacidad y confidencialidad.
+
+===========================================================================
+FIN DEL REPORTE
+===========================================================================
